@@ -75,6 +75,13 @@ GEM
     ast (2.4.3)
     base64 (0.3.0)
     benchmark (0.4.1)
+    better_html (2.1.1)
+      actionview (>= 6.0)
+      activesupport (>= 6.0)
+      ast (~> 2.0)
+      erubi (~> 1.4)
+      parser (>= 2.4)
+      smart_properties
     bigdecimal (3.2.2)
     bindex (0.8.1)
     bootsnap (1.18.6)
@@ -224,22 +231,18 @@ GEM
     rubocop-ast (1.45.1)
       parser (>= 3.3.7.2)
       prism (~> 1.4)
-    rubocop-performance (1.25.0)
-      lint_roller (~> 1.1)
-      rubocop (>= 1.75.0, < 2.0)
-      rubocop-ast (>= 1.38.0, < 2.0)
+    rubocop-erb (0.3.1)
+      better_html
+      rubocop (~> 1.45)
     rubocop-rails (2.32.0)
       activesupport (>= 4.2.0)
       lint_roller (~> 1.1)
       rack (>= 1.1)
       rubocop (>= 1.75.0, < 2.0)
       rubocop-ast (>= 1.44.0, < 2.0)
-    rubocop-rails-omakase (1.1.0)
-      rubocop (>= 1.72)
-      rubocop-performance (>= 1.24)
-      rubocop-rails (>= 2.30)
     ruby-progressbar (1.13.0)
     securerandom (0.4.1)
+    smart_properties (1.17.0)
     sprockets (4.2.2)
       concurrent-ruby (~> 1.0)
       logger
@@ -294,7 +297,9 @@ DEPENDENCIES
   pg (~> 1.1)
   puma (>= 5.0)
   rails (~> 7.2.2, >= 7.2.2.1)
-  rubocop-rails-omakase
+  rubocop
+  rubocop-erb (~> 0.3.0)
+  rubocop-rails
   sprockets-rails
   stimulus-rails
   turbo-rails
