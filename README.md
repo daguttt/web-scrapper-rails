@@ -45,5 +45,17 @@ rails db:create
 rails db:migrate
 ```
 
+### 4. Run the app
+If you want to use the TailwindCSS dev server to generate the CSS rules, run the following command:
 
+```bash
+bin/dev
+```
 
+Otherwhise, you can run the following command:
+
+```bash
+bin/rails server
+```
+
+The app will be available at `http://localhost:3000`
