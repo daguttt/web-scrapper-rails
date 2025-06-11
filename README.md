@@ -7,6 +7,13 @@ App that allows users to scrape a web page and get a list of all of the links in
 - Rails 7.2.2
 - PostgreSQL
 
+## NOTE: Correction of question asked during interview
+
+- Question asked: **"What is the difference between `after_create` and `after_save` callbacks in ActiveRecord?"**
+    - My answer was: `after_create` is executed after an object instance is created in memory (***not necessarily persisted***), while `after_save` is executed after the object instance is persisted (created or updated in DB).
+- Correction: I was wrong about `after_create` callback. It is executed after the object instance is only created in DB (**not when model is updated**). Callbacks are meant to be executed in ActiveRecord operations and creating a model instance using `new` doesn't trigger callbacks.
+
+
 ## Local Dev Setup
 
 ### 1. Environment variables
