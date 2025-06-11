@@ -28,4 +28,16 @@
 #       enabled: "ON"
 
 en:
-  hello: "Hello world"
+  pages:
+    create:
+      success: 'Page was successfully created'
+  activerecord:
+    errors:
+      models:
+        page:
+          attributes:
+            title:
+              blank: "Title can't be blank"
+            url:
+              blank: "URL can't be blank"
+              invalid: 'URL is invalid'
