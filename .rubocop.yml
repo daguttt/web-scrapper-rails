@@ -30,6 +30,8 @@ Layout/LineLength:
   Exclude:
     - 'config/**/*.rb'
     - 'db/migrate/*.rb'
+    - 'app/views/**/*.html.erb'
+
 Layout/MultilineMethodCallIndentation:
   EnforcedStyle: indented_relative_to_receiver
   IndentationWidth: 2
