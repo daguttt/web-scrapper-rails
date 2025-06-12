@@ -17,6 +17,12 @@ App that allows users to scrape a web page and get a list of all of the links in
 - Faraday (Http Client)
 - Nokogiri (HTML parser)
 
+#### Testing
+- RSpec (Testing framework)
+- Factory bot (Mocked data models)
+- Faker (Fake data for models)
+- VCR (Record HTTP interactions)
+
 ## NOTE: Correction of question asked during interview
 
 - Question asked: **"What is the difference between `after_create` and `after_save` callbacks in ActiveRecord?"**
