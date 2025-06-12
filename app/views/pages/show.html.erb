@@ -24,7 +24,7 @@
     </p>
   </div>
   <%# Links table %>
-  <% if @page.links.any? %>
+  <% if @page_links.any? %>
     <section class="mt-8">
       <h1 class="text-2xl font-bold">Sublinks</h1>
       <div class="overflow-auto">
@@ -36,7 +36,7 @@
             </tr>
           </thead>
           <tbody class="divide-y divide-gray-200">
-            <% @page.links.each do |link| %>
+            <% @page_links.each do |link| %>
               <tr class="hover:bg-gray-50 cursor-pointer text-gray-900">
                 <td class="px-6 py-4 text-left text-sm font-medium">
                   <%= link.title %>
@@ -57,4 +57,8 @@
       <p class="text-center my-10">No links found. (Failed scrapping the page)</p>
     <% end %>
   <% end %>
+  <%# Pagination %>
+  <div class="mt-4 flex justify-center">
+    <%== pagy_nav(@pagy) %>
+  </div>
 </main>

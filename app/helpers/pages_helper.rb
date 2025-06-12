@@ -1,4 +1,6 @@
 module PagesHelper
+  include Pagy::Frontend
+
   STATUS_BADGE_CONTAINER_CLASSES = {
     'processing' => 'bg-yellow-100 text-yellow-800 dark:bg-yellow-800/30 dark:text-yellow-500',
     'success' => 'bg-green-100 text-green-800 dark:bg-green-800/30 dark:text-green-500',

@@ -17,6 +17,7 @@ App that allows users to scrape a web page and get a list of all of the links in
 - Faraday (Http Client)
 - Nokogiri (HTML parser)
 - Simplecov (Display Code coverage)
+- Pagy (Pagination)
 
 #### Testing
 - RSpec (Testing framework)

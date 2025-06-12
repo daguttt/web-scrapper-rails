@@ -74,3 +74,5 @@ gem 'nokogiri', '~> 1.18', '>= 1.18.8'
 gem 'faraday', '~> 2.13', '>= 2.13.1'
 
 gem 'devise', '~> 4.9'
+
+gem 'pagy', '~> 9.3'

@@ -1,7 +1,10 @@
 class PagesController < ApplicationController
+  include Pagy::Backend
+
   before_action :authenticate_user!, only: %i[create show]
+  # Also in `index` action for the new page field
   before_action :set_page, only: %i[show index]
-  before_action :set_pages, only: %i[index create]
+  before_action :set_pages, only: %i[index]
 
   # GET /pages or /pages.json
   def index; end
@@ -25,17 +28,17 @@ class PagesController < ApplicationController
 
   private
 
-  # Use callbacks to share common setup or constraints between actions.
   def set_page
     @page = if params[:id].present?
               Page.find(params[:id])
             else
               Page.new
             end
+    @pagy, @page_links = pagy(@page.links)
   end
 
   def set_pages
-    @pages = user_signed_in? ? current_user.pages : []
+    @pagy, @pages = pagy(user_signed_in? ? current_user.pages : [])
   end
 
   # Only allow a list of trusted parameters through.
