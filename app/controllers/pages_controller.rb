@@ -38,7 +38,9 @@ class PagesController < ApplicationController
   end
 
   def set_pages
-    @pagy, @pages = pagy(user_signed_in? ? current_user.pages : [])
+    return @pagy = nil, @pages = [] unless user_signed_in?
+
+    @pagy, @pages = pagy(current_user.pages)
   end
 
   # Only allow a list of trusted parameters through.

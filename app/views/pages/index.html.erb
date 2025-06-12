@@ -77,7 +77,9 @@
     </div>
   </section>
   <%# Pagination %>
-  <div class="mt-4 flex justify-center">
-    <%== pagy_nav(@pagy) %>
-  </div>
+  <% if user_signed_in? %>
+    <div class="mt-4 flex justify-center">
+      <%== pagy_nav(@pagy) %>
+    </div>
+  <% end %>
 </main>
