@@ -37,6 +37,7 @@ gem 'bootsnap', require: false
 group :test do
   gem 'rspec-rails', '~> 8.0'
   gem 'shoulda-matchers', '~> 6.5'
+  gem 'simplecov', '~> 0.22.0', require: false
   gem 'vcr', '~> 6.3'
 end
 

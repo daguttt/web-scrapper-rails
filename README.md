@@ -16,6 +16,7 @@ App that allows users to scrape a web page and get a list of all of the links in
 - TailwindCSS (CSS Library)
 - Faraday (Http Client)
 - Nokogiri (HTML parser)
+- Simplecov (Display Code coverage)
 
 #### Testing
 - RSpec (Testing framework)
