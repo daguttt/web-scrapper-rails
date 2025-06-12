@@ -1,4 +1,5 @@
 class PagesController < ApplicationController
+  before_action :authenticate_user!, only: %i[create show]
   before_action :set_page, only: %i[show index]
   before_action :set_pages, only: %i[index create]
 

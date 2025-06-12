@@ -1,5 +1,7 @@
 <% content_for :title, 'Showing page' %>
 <main class="container mx-auto px-4 py-8">
+  <%# Flash messages %>
+  <%= render 'partials/flash' %>
   <%# Back to pages %>
   <%= link_to pages_path, class: 'inline-flex gap-1 items-center text-blue-600 hover:text-blue-700' do %>
     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-5">

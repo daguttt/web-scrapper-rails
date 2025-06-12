@@ -1,1 +1,5 @@
-@import "tailwindcss";
+@import 'tailwindcss';
+
+@utility main-min-h {
+  min-height: calc(100svh - theme('spacing.4') * 2);
+}

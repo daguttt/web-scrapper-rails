@@ -78,11 +78,13 @@ class PageScrapperService
   def handle_error(error:, page_obj:)
     page_obj.update(status: :failed)
 
-    # TODO: Send error to loggin service
     case error
     when CouldNotFetchPageError
       Rails.logger.error do
-        "Error fetching page's html (URL: #{error.url}, Status code: #{error.status_code}). Error Message: #{error.message} "
+        <<~ERROR
+          Error fetching page's html (URL: #{error.url}, Status code: #{error.status_code}).
+          Error Message: #{error.message}
+        ERROR
       end
     when ActiveRecord::ActiveRecordError
       Rails.logger.error { "Error updating page in DB: #{error.message}" }
