@@ -50,6 +50,7 @@ group :development, :test do
   gem 'rubocop-rails', require: false
 
   gem 'factory_bot_rails', '~> 6.4'
+  gem 'faker', '~> 3.5'
 end
 
 group :development do
