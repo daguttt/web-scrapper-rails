@@ -62,29 +62,15 @@ class PageScrapperService
     }
   end
 
-  def self.update_page_title(page_obj:, page_title:)
-    Result.success page_obj.update!(title: page_title)
-  rescue ActiveRecord::ActiveRecordError => e
-    handle_error(error: e, page_obj:)
-  end
-
-  def self.update_page_links(page_obj:, links:)
-    page_obj.links = links
-    Result.success page_obj.save!
-  rescue ActiveRecord::ActiveRecordError => e
-    handle_error(error: e, page_obj:)
-  end
-
   def self.run(page_obj)
     html_result = fetch_page_html(url: page_obj.url)
     return handle_error(error: html_result.error, page_obj:) if html_result.failure?
 
     links, page_title = scrape_page(html: html_result.value, base_url: page_obj.url).fetch_values(:links, :page_title)
 
-    update_page_title(page_obj:, page_title:)
-    update_page_links(page_obj:, links:)
-
-    page_obj.update(status: :success)
+    page_obj.links = links
+    page_obj.title = page_title
+    page_obj.update!(status: :success)
     Result.success('Page successfully scraped')
   rescue ActiveRecord::ActiveRecordError => e
     handle_error(error: e, page_obj:)
