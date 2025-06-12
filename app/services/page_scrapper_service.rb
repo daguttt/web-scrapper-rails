@@ -23,9 +23,8 @@ class PageScrapperService
   def self.compute_link_url(link_url:, base_url:)
     return link_url if link_url.start_with?('http')
 
-    parsed_base_url = base_url.sub(/#.*/, '')
-                        .sub(%r{/$}, '')
-    "#{parsed_base_url}/#{link_url}"
+    parsed_base_url = URI.parse(base_url)
+    URI.join(parsed_base_url.origin, link_url)
   end
 
   def self.scrape_page_links(doc:, base_url:)
