@@ -22,6 +22,7 @@ App that allows users to scrape a web page and get a list of all of the links in
 - Factory bot (Mocked data models)
 - Faker (Fake data for models)
 - VCR (Record HTTP interactions)
+- Shoulda Matchers (Simple One-liner for tests)
 
 ## NOTE: Correction of question asked during interview
 

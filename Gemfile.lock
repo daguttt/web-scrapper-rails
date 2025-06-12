@@ -288,6 +288,8 @@ GEM
       rubocop-ast (>= 1.44.0, < 2.0)
     ruby-progressbar (1.13.0)
     securerandom (0.4.1)
+    shoulda-matchers (6.5.0)
+      activesupport (>= 5.2.0)
     smart_properties (1.17.0)
     sprockets (4.2.2)
       concurrent-ruby (~> 1.0)
@@ -369,6 +371,7 @@ DEPENDENCIES
   rubocop
   rubocop-erb (~> 0.3.0)
   rubocop-rails
+  shoulda-matchers (~> 6.5)
   sprockets-rails
   stimulus-rails
   tailwindcss-rails (~> 4.2)
