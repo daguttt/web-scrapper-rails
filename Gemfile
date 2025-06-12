@@ -36,6 +36,7 @@ gem 'bootsnap', require: false
 
 group :test do
   gem 'rspec-rails', '~> 8.0'
+  gem 'vcr', '~> 6.3'
 end
 
 group :development, :test do

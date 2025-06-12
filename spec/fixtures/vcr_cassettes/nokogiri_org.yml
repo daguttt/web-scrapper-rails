@@ -1,0 +1,839 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://nokogiri.org/rdoc/index.html
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.13.1
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      connection:
+      - keep-alive
+      content-length:
+      - '7901'
+      server:
+      - GitHub.com
+      content-type:
+      - text/html; charset=utf-8
+      last-modified:
+      - Mon, 21 Apr 2025 19:19:48 GMT
+      access-control-allow-origin:
+      - "*"
+      etag:
+      - W/"68069a54-7c4f"
+      expires:
+      - Thu, 12 Jun 2025 15:13:02 GMT
+      cache-control:
+      - max-age=600
+      content-encoding:
+      - gzip
+      x-proxy-cache:
+      - MISS
+      x-github-request-id:
+      - D99C:197AA7:3D014B:41FC63:684AEC25
+      accept-ranges:
+      - bytes
+      age:
+      - '0'
+      date:
+      - Thu, 12 Jun 2025 20:01:22 GMT
+      via:
+      - 1.1 varnish
+      x-served-by:
+      - cache-bog-skbo2340068-BOG
+      x-cache:
+      - HIT
+      x-cache-hits:
+      - '0'
+      x-timer:
+      - S1749758482.378924,VS0,VE96
+      vary:
+      - Accept-Encoding
+      x-fastly-request-id:
+      - 3b20c748792b6ee22abea98aa1d92836f24e6f20
+    body:
+      encoding: UTF-8
+      string: "<!DOCTYPE html>\n<html>\n<head>\n<meta http-equiv=\"Content-Type\"
+        content=\"text/html; charset=UTF-8\">\n<meta charset=\"UTF-8\">\n<meta name=\"viewport\"
+        content=\"width=device-width, initial-scale=1\">\n\n<title>RDoc Documentation</title>\n\n
+        \ <meta name=\"keywords\" content=\"ruby,documentation,RDoc Documentation\">\n\n\n
+        \   <meta name=\"description\" content=\"RDoc Documentation: Nokogiri Nokogiri
+        (鋸) makes it easy and painless to work with XML and HTML from Ruby. It is
+        fast and standards-compliant by relying on native parsers\">\n\n<script type=\"text/javascript\">\n
+        \ var rdoc_rel_prefix = \"./\";\n  var index_rel_prefix = \"./\";\n</script>\n\n<script
+        src=\"./js/navigation.js\" defer></script>\n<script src=\"./js/search.js\"
+        defer></script>\n<script src=\"./js/search_index.js\" defer></script>\n<script
+        src=\"./js/searcher.js\" defer></script>\n<script src=\"./js/darkfish.js\"
+        defer></script>\n\n<link href=\"./css/fonts.css\" rel=\"stylesheet\">\n<link
+        href=\"./css/rdoc.css\" rel=\"stylesheet\">\n<link href=\"./rdoc-tweaks.css\"
+        rel=\"stylesheet\">\n\n\n<!-- Global site tag (gtag.js) - Google Analytics
+        -->\n<script async src=\"https://www.googletagmanager.com/gtag/js?id=G-BZR5RZN084\"></script>\n<script>\n
+        \ window.dataLayer = window.dataLayer || [];\n  function gtag(){dataLayer.push(arguments);}\n
+        \ gtag('js', new Date());\n\n  gtag('config', 'G-BZR5RZN084');\n</script>\n</head>\n<body
+        id=\"top\" role=\"document\" class=\"file\">\n<div id=\"navigation-toggle\"
+        role=\"button\" tabindex=\"0\" aria-label=\"Toggle sidebar\" aria-expanded=\"true\"
+        aria-controls=\"navigation\">\n  <span aria-hidden=\"true\">☰</span>\n</div>\n\n\n<nav
+        id=\"navigation\" role=\"navigation\">\n  <div id=\"project-navigation\">\n
+        \   <div id=\"home-section\" role=\"region\" title=\"Quick navigation\" class=\"nav-section\">\n
+        \ <h2>\n    <a href=\"./index.html\" rel=\"home\">Home</a>\n  </h2>\n\n  <div
+        id=\"table-of-contents-navigation\">\n    <a href=\"./table_of_contents.html#pages\">Pages</a>\n
+        \   <a href=\"./table_of_contents.html#classes\">Classes</a>\n    <a href=\"./table_of_contents.html#methods\">Methods</a>\n
+        \ </div>\n</div>\n\n    <div id=\"search-section\" role=\"search\" class=\"project-section
+        initially-hidden\">\n  <form action=\"#\" method=\"get\" accept-charset=\"utf-8\">\n
+        \   <div id=\"search-field-wrapper\">\n      <input id=\"search-field\" role=\"combobox\"
+        aria-label=\"Search\" aria-autocomplete=\"list\" aria-controls=\"search-results\"
+        type=\"text\" name=\"search\" placeholder=\"Search (/) for a class, method,
+        ...\" spellcheck=\"false\" title=\"Type to search, Up and Down to navigate,
+        Enter to load\">\n    </div>\n\n    <ul id=\"search-results\" aria-label=\"Search
+        Results\" aria-busy=\"false\" aria-expanded=\"false\" aria-atomic=\"false\"
+        class=\"initially-hidden\"></ul>\n  </form>\n</div>\n\n  </div>\n\n  \n<div
+        id=\"fileindex-section\" class=\"nav-section\">\n  <h3>Pages</h3>\n\n  <ul
+        class=\"link-list\">\n    <li>\n<a href=\"./README_md.html\">README</a>\n
+        \ </li>\n</ul>\n</div>\n\n  <div id=\"classindex-section\" class=\"nav-section\">\n
+        \ <h3>Class and Module Index</h3>\n\n  <ul class=\"link-list\">\n  <li>\n<details><summary><code><a
+        href=\"./Nokogiri.html\">Nokogiri</a></code></summary>\n  <ul class=\"link-list\">\n
+        \ <li>\n<details><summary><code><a href=\"./Nokogiri/CSS.html\">CSS</a></code></summary>\n
+        \ <ul class=\"link-list\">\n  <li>\n<code><a href=\"./Nokogiri/CSS/SyntaxError.html\">SyntaxError</a></code>\n
+        \ </li>\n<li>\n<details><summary><code><a href=\"./Nokogiri/CSS/XPathVisitor.html\">XPathVisitor</a></code></summary>\n
+        \ <ul class=\"link-list\">\n  <li>\n<code><a href=\"./Nokogiri/CSS/XPathVisitor/BuiltinsConfig.html\">BuiltinsConfig</a></code>\n
+        \ </li>\n<li>\n<code><a href=\"./Nokogiri/CSS/XPathVisitor/DoctypeConfig.html\">DoctypeConfig</a></code>\n
+        \ </li>\n</ul></details>\n  </li>\n</ul></details>\n  </li>\n<li>\n<code><a
+        href=\"./Nokogiri/ClassResolver.html\">ClassResolver</a></code>\n  </li>\n<li>\n<details><summary><code><a
+        href=\"./Nokogiri/Decorators.html\">Decorators</a></code></summary>\n  <ul
+        class=\"link-list\">\n  <li>\n<code><a href=\"./Nokogiri/Decorators/Slop.html\">Slop</a></code>\n
+        \ </li>\n</ul></details>\n  </li>\n<li>\n<code><a href=\"./Nokogiri/EncodingHandler.html\">EncodingHandler</a></code>\n
+        \ </li>\n<li>\n<code><a href=\"./Nokogiri/Gumbo.html\">Gumbo</a></code>\n
+        \ </li>\n<li>\n<details><summary><code><a href=\"./Nokogiri/HTML4.html\">HTML</a></code></summary>\n
+        \ <ul class=\"link-list\">\n  <li>\n<code><a href=\"./Nokogiri/HTML/Builder.html\">Builder</a></code>\n
+        \ </li>\n<li>\n<code><a href=\"./Nokogiri/HTML/Document.html\">Document</a></code>\n
+        \ </li>\n<li>\n<code><a href=\"./Nokogiri/HTML/DocumentFragment.html\">DocumentFragment</a></code>\n
+        \ </li>\n</ul></details>\n  </li>\n<li>\n<details><summary><code><a href=\"./Nokogiri/HTML4.html\">HTML4</a></code></summary>\n
+        \ <ul class=\"link-list\">\n  <li>\n<code><a href=\"./Nokogiri/HTML4/Builder.html\">Builder</a></code>\n
+        \ </li>\n<li>\n<code><a href=\"./Nokogiri/HTML4/Document.html\">Document</a></code>\n
+        \ </li>\n<li>\n<code><a href=\"./Nokogiri/HTML4/DocumentFragment.html\">DocumentFragment</a></code>\n
+        \ </li>\n<li>\n<code><a href=\"./Nokogiri/HTML4/ElementDescription.html\">ElementDescription</a></code>\n
+        \ </li>\n<li>\n<code><a href=\"./Nokogiri/HTML4/EntityDescription.html\">EntityDescription</a></code>\n
+        \ </li>\n<li>\n<code><a href=\"./Nokogiri/HTML4/EntityLookup.html\">EntityLookup</a></code>\n
+        \ </li>\n<li>\n<details><summary><code><a href=\"./Nokogiri/HTML4/SAX.html\">SAX</a></code></summary>\n
+        \ <ul class=\"link-list\">\n  <li>\n<code><a href=\"./Nokogiri/HTML4/SAX/Parser.html\">Parser</a></code>\n
+        \ </li>\n<li>\n<code><a href=\"./Nokogiri/HTML4/SAX/ParserContext.html\">ParserContext</a></code>\n
+        \ </li>\n<li>\n<code><a href=\"./Nokogiri/HTML4/SAX/PushParser.html\">PushParser</a></code>\n
+        \ </li>\n</ul></details>\n  </li>\n</ul></details>\n  </li>\n<li>\n<details><summary><code><a
+        href=\"./Nokogiri/HTML5.html\">HTML5</a></code></summary>\n  <ul class=\"link-list\">\n
+        \ <li>\n<code><a href=\"./Nokogiri/HTML5/Builder.html\">Builder</a></code>\n
+        \ </li>\n<li>\n<code><a href=\"./Nokogiri/HTML5/Document.html\">Document</a></code>\n
+        \ </li>\n<li>\n<code><a href=\"./Nokogiri/HTML5/DocumentFragment.html\">DocumentFragment</a></code>\n
+        \ </li>\n<li>\n<code><a href=\"./Nokogiri/HTML5/Node.html\">Node</a></code>\n
+        \ </li>\n<li>\n<code><a href=\"./Nokogiri/HTML5/QuirksMode.html\">QuirksMode</a></code>\n
+        \ </li>\n</ul></details>\n  </li>\n<li>\n<code><a href=\"./Nokogiri/SyntaxError.html\">SyntaxError</a></code>\n
+        \ </li>\n<li>\n<details><summary><code><a href=\"./Nokogiri/XML.html\">XML</a></code></summary>\n
+        \ <ul class=\"link-list\">\n  <li>\n<code><a href=\"./Nokogiri/XML/Attr.html\">Attr</a></code>\n
+        \ </li>\n<li>\n<code><a href=\"./Nokogiri/XML/AttributeDecl.html\">AttributeDecl</a></code>\n
+        \ </li>\n<li>\n<code><a href=\"./Nokogiri/XML/Builder.html\">Builder</a></code>\n
+        \ </li>\n<li>\n<code><a href=\"./Nokogiri/XML/CDATA.html\">CDATA</a></code>\n
+        \ </li>\n<li>\n<code><a href=\"./Nokogiri/XML/CharacterData.html\">CharacterData</a></code>\n
+        \ </li>\n<li>\n<code><a href=\"./Nokogiri/XML/Comment.html\">Comment</a></code>\n
+        \ </li>\n<li>\n<code><a href=\"./Nokogiri/XML/DTD.html\">DTD</a></code>\n
+        \ </li>\n<li>\n<code><a href=\"./Nokogiri/XML/Document.html\">Document</a></code>\n
+        \ </li>\n<li>\n<code><a href=\"./Nokogiri/XML/DocumentFragment.html\">DocumentFragment</a></code>\n
+        \ </li>\n<li>\n<code><a href=\"./Nokogiri/XML/Element.html\">Element</a></code>\n
+        \ </li>\n<li>\n<code><a href=\"./Nokogiri/XML/ElementContent.html\">ElementContent</a></code>\n
+        \ </li>\n<li>\n<code><a href=\"./Nokogiri/XML/ElementDecl.html\">ElementDecl</a></code>\n
+        \ </li>\n<li>\n<code><a href=\"./Nokogiri/XML/EntityDecl.html\">EntityDecl</a></code>\n
+        \ </li>\n<li>\n<code><a href=\"./Nokogiri/XML/EntityReference.html\">EntityReference</a></code>\n
+        \ </li>\n<li>\n<code><a href=\"./Nokogiri/XML/Namespace.html\">Namespace</a></code>\n
+        \ </li>\n<li>\n<details><summary><code><a href=\"./Nokogiri/XML/Node.html\">Node</a></code></summary>\n
+        \ <ul class=\"link-list\">\n  <li>\n<code><a href=\"./Nokogiri/XML/Node/SaveOptions.html\">SaveOptions</a></code>\n
+        \ </li>\n</ul></details>\n  </li>\n<li>\n<code><a href=\"./Nokogiri/XML/NodeSet.html\">NodeSet</a></code>\n
+        \ </li>\n<li>\n<code><a href=\"./Nokogiri/XML/Notation.html\">Notation</a></code>\n
+        \ </li>\n<li>\n<code><a href=\"./Nokogiri/XML/ParseOptions.html\">ParseOptions</a></code>\n
+        \ </li>\n<li>\n<code><a href=\"./Nokogiri/XML/ProcessingInstruction.html\">ProcessingInstruction</a></code>\n
+        \ </li>\n<li>\n<code><a href=\"./Nokogiri/XML/Reader.html\">Reader</a></code>\n
+        \ </li>\n<li>\n<code><a href=\"./Nokogiri/XML/RelaxNG.html\">RelaxNG</a></code>\n
+        \ </li>\n<li>\n<details><summary><code><a href=\"./Nokogiri/XML/SAX.html\">SAX</a></code></summary>\n
+        \ <ul class=\"link-list\">\n  <li>\n<code><a href=\"./Nokogiri/XML/SAX/Document.html\">Document</a></code>\n
+        \ </li>\n<li>\n<details><summary><code><a href=\"./Nokogiri/XML/SAX/Parser.html\">Parser</a></code></summary>\n
+        \ <ul class=\"link-list\">\n  <li>\n<code><a href=\"./Nokogiri/XML/SAX/Parser/Attribute.html\">Attribute</a></code>\n
+        \ </li>\n</ul></details>\n  </li>\n<li>\n<code><a href=\"./Nokogiri/XML/SAX/ParserContext.html\">ParserContext</a></code>\n
+        \ </li>\n<li>\n<code><a href=\"./Nokogiri/XML/SAX/PushParser.html\">PushParser</a></code>\n
+        \ </li>\n</ul></details>\n  </li>\n<li>\n<code><a href=\"./Nokogiri/XML/Schema.html\">Schema</a></code>\n
+        \ </li>\n<li>\n<code><a href=\"./Nokogiri/XML/Searchable.html\">Searchable</a></code>\n
+        \ </li>\n<li>\n<code><a href=\"./Nokogiri/XML/SyntaxError.html\">SyntaxError</a></code>\n
+        \ </li>\n<li>\n<code><a href=\"./Nokogiri/XML/Text.html\">Text</a></code>\n
+        \ </li>\n<li>\n<details><summary><code><a href=\"./Nokogiri/XML/XPath.html\">XPath</a></code></summary>\n
+        \ <ul class=\"link-list\">\n  <li>\n<code><a href=\"./Nokogiri/XML/XPath/SyntaxError.html\">SyntaxError</a></code>\n
+        \ </li>\n</ul></details>\n  </li>\n<li>\n<code><a href=\"./Nokogiri/XML/XPathContext.html\">XPathContext</a></code>\n
+        \ </li>\n</ul></details>\n  </li>\n<li>\n<details><summary><code><a href=\"./Nokogiri/XSLT.html\">XSLT</a></code></summary>\n
+        \ <ul class=\"link-list\">\n  <li>\n<code><a href=\"./Nokogiri/XSLT/Stylesheet.html\">Stylesheet</a></code>\n
+        \ </li>\n</ul></details>\n  </li>\n</ul></details>\n  </li>\n<li>\n<code><a
+        href=\"./Object.html\">Object</a></code>\n  </li>\n<li>\n<details><summary><code><a
+        href=\"./XSD.html\">XSD</a></code></summary>\n  <ul class=\"link-list\">\n
+        \ <li>\n<details><summary><code><a href=\"./XSD/XMLParser.html\">XMLParser</a></code></summary>\n
+        \ <ul class=\"link-list\">\n  <li>\n<code><a href=\"./XSD/XMLParser/Nokogiri.html\">Nokogiri</a></code>\n
+        \ </li>\n</ul></details>\n  </li>\n</ul></details>\n</li>\n</ul>\n</div>\n\n\n
+        \ <footer id=\"validator-badges\" role=\"contentinfo\">\n  <p><a href=\"https://validator.w3.org/check/referer\">Validate</a>\n
+        \ </p>\n<p>Generated by <a href=\"https://ruby.github.io/rdoc/\">RDoc</a>
+        6.10.0.\n  </p>\n<p>Based on <a href=\"http://deveiate.org/projects/Darkfish-RDoc/\">Darkfish</a>
+        by <a href=\"http://deveiate.org\">Michael Granger</a>.\n</p></footer>\n\n</nav>\n\n<main
+        role=\"main\">\n\n<div><img src=\"https://nokogiri.org/images/nokogiri-serif-black.png\"
+        align=\"right\"></div>\n<h1 id=\"label-Nokogiri\">\n<a href=\"Nokogiri.html\"><code>Nokogiri</code></a><span><a
+        href=\"#label-Nokogiri\">¶</a> <a href=\"#top\">↑</a></span>\n</h1>\n\n<p><a
+        href=\"Nokogiri.html\"><code>Nokogiri</code></a> (鋸) makes it easy and painless
+        to work with XML and HTML from Ruby. It provides a sensible, easy-to-understand
+        API for <a href=\"https://nokogiri.org/tutorials/parsing_an_html_xml_document.html\">reading</a>,
+        writing, <a href=\"https://nokogiri.org/tutorials/modifying_an_html_xml_document.html\">modifying</a>,
+        and <a href=\"https://nokogiri.org/tutorials/searching_a_xml_html_document.html\">querying</a>
+        documents. It is fast and standards-compliant by relying on native parsers
+        like libxml2, libgumbo, and xerces.</p>\n\n<h2 id=\"label-Guiding+Principles\">Guiding
+        Principles<span><a href=\"#label-Guiding+Principles\">¶</a> <a href=\"#top\">↑</a></span>\n</h2>\n\n<p>Some
+        guiding principles <a href=\"Nokogiri.html\"><code>Nokogiri</code></a> tries
+        to follow:</p>\n<ul>\n<li>\n<p>be secure-by-default by treating all documents
+        as <strong>untrusted</strong> by default</p>\n</li>\n<li>\n<p>be a <strong>thin-as-reasonable
+        layer</strong> on top of the underlying parsers, and don’t attempt to fix
+        behavioral differences between the parsers</p>\n</li>\n</ul>\n\n<h2 id=\"label-Features+Overview\">Features
+        Overview<span><a href=\"#label-Features+Overview\">¶</a> <a href=\"#top\">↑</a></span>\n</h2>\n<ul>\n<li>\n<p>DOM
+        Parser for XML, HTML4, and HTML5</p>\n</li>\n<li>\n<p>SAX Parser for XML and
+        HTML4</p>\n</li>\n<li>\n<p>Push Parser for XML and HTML4</p>\n</li>\n<li>\n<p>Document
+        search via XPath 1.0</p>\n</li>\n<li>\n<p>Document search via CSS3 selectors,
+        with some jquery-like extensions</p>\n</li>\n<li>\n<p><a href=\"XSD.html\"><code>XSD</code></a>
+        Schema validation</p>\n</li>\n<li>\n<p>XSLT transformation</p>\n</li>\n<li>\n<p>“Builder”
+        DSL for XML and HTML documents</p>\n</li>\n</ul>\n\n<h2 id=\"label-Status\">Status<span><a
+        href=\"#label-Status\">¶</a> <a href=\"#top\">↑</a></span>\n</h2>\n\n<p><a
+        href=\"https://github.com/sparklemotion/nokogiri/actions/workflows/ci.yml\"><img
+        src=\"https://github.com/sparklemotion/nokogiri/actions/workflows/ci.yml/badge.svg?branch=main\"></a>
+        <a href=\"https://ci.appveyor.com/project/flavorjones/nokogiri/branch/main\"><img
+        src=\"https://ci.appveyor.com/api/projects/status/xj2pqwvlxwuwgr06/branch/main?svg=true\"></a></p>\n\n<p><a
+        href=\"https://rubygems.org/gems/nokogiri\"><img src=\"https://badge.fury.io/rb/nokogiri.svg\"></a>
+        <a href=\"https://docs.github.com/en/code-security/supply-chain-security/managing-vulnerabilities-in-your-projects-dependencies/about-dependabot-security-updates#about-compatibility-scores\"><img
+        src=\"https://dependabot-badges.githubapp.com/badges/compatibility_score?dependency-name=nokogiri&amp;package-manager=bundler&amp;previous-version=1.11.7&amp;new-version=1.12.5\"></a></p>\n\n<p><a
+        href=\"https://bestpractices.coreinfrastructure.org/projects/5344\"><img src=\"https://bestpractices.coreinfrastructure.org/projects/5344/badge\"></a>
+        <a href=\"https://tidelift.com/subscription/pkg/rubygems-nokogiri?utm_source=rubygems-nokogiri&amp;utm_medium=referral&amp;utm_campaign=readme\"><img
+        src=\"https://tidelift.com/badges/package/rubygems/nokogiri\"></a></p>\n\n<h2
+        id=\"label-Support-2C+Getting+Help-2C+and+Reporting+Issues\">Support, Getting
+        Help, and Reporting Issues<span><a href=\"#label-Support-2C+Getting+Help-2C+and+Reporting+Issues\">¶</a>
+        <a href=\"#top\">↑</a></span>\n</h2>\n\n<p>All official documentation is posted
+        at <a href=\"https://nokogiri.org\">nokogiri.org</a> (the source for which
+        is at <a href=\"https://github.com/sparklemotion/nokogiri.org\">github.com/sparklemotion/nokogiri.org</a>/,
+        and we welcome contributions).</p>\n\n<h3 id=\"label-Reading\">Reading<span><a
+        href=\"#label-Reading\">¶</a> <a href=\"#top\">↑</a></span>\n</h3>\n\n<p>Your
+        first stops for learning more about <a href=\"Nokogiri.html\"><code>Nokogiri</code></a>
+        should be:</p>\n<ul>\n<li>\n<p><a href=\"https://nokogiri.org/rdoc/index.html\">API
+        Documentation</a></p>\n</li>\n<li>\n<p><a href=\"https://nokogiri.org/tutorials/toc.html\">Tutorials</a></p>\n</li>\n<li>\n<p>An
+        excellent community-maintained <a href=\"https://github.com/sparklemotion/nokogiri/wiki/Cheat-sheet\">Cheat
+        Sheet</a></p>\n</li>\n</ul>\n\n<h3 id=\"label-Ask+For+Help\">Ask For Help<span><a
+        href=\"#label-Ask+For+Help\">¶</a> <a href=\"#top\">↑</a></span>\n</h3>\n\n<p>There
+        are a few ways to ask exploratory questions:</p>\n<ul>\n<li>\n<p>The <a href=\"Nokogiri.html\"><code>Nokogiri</code></a>
+        mailing list is active at <a href=\"https://groups.google.com/group/nokogiri-talk\">groups.google.com/group/nokogiri-talk</a></p>\n</li>\n<li>\n<p>Open
+        an issue using the “Help Request” template at <a href=\"https://github.com/sparklemotion/nokogiri/issues\">github.com/sparklemotion/nokogiri/issues</a></p>\n</li>\n<li>\n<p>Open
+        a discussion at <a href=\"https://github.com/sparklemotion/nokogiri/discussions\">github.com/sparklemotion/nokogiri/discussions</a></p>\n</li>\n</ul>\n\n<p>Please
+        do not mail the maintainers at their personal addresses.</p>\n\n<h3 id=\"label-Report+A+Bug\">Report
+        A Bug<span><a href=\"#label-Report+A+Bug\">¶</a> <a href=\"#top\">↑</a></span>\n</h3>\n\n<p>The
+        <a href=\"Nokogiri.html\"><code>Nokogiri</code></a> bug tracker is at <a href=\"https://github.com/sparklemotion/nokogiri/issues\">github.com/sparklemotion/nokogiri/issues</a></p>\n\n<p>Please
+        use the “Bug Report” or “Installation Difficulties” templates.</p>\n\n<h3
+        id=\"label-Security+and+Vulnerability+Reporting\">Security and Vulnerability
+        Reporting<span><a href=\"#label-Security+and+Vulnerability+Reporting\">¶</a>
+        <a href=\"#top\">↑</a></span>\n</h3>\n\n<p>Please report vulnerabilities at
+        <a href=\"https://hackerone.com/nokogiri\">hackerone.com/nokogiri</a></p>\n\n<p>Full
+        information and description of our security policy is in {<code>SECURITY.md</code><a
+        href=\"SECURITY_md.html\">}</a></p>\n\n<h3 id=\"label-Semantic+Versioning+Policy\">Semantic
+        Versioning Policy<span><a href=\"#label-Semantic+Versioning+Policy\">¶</a>
+        <a href=\"#top\">↑</a></span>\n</h3>\n\n<p><a href=\"Nokogiri.html\"><code>Nokogiri</code></a>
+        follows <a href=\"https://semver.org/\">Semantic Versioning</a> (since 2017
+        or so). <a href=\"https://docs.github.com/en/code-security/supply-chain-security/managing-vulnerabilities-in-your-projects-dependencies/about-dependabot-security-updates#about-compatibility-scores\"><img
+        src=\"https://dependabot-badges.githubapp.com/badges/compatibility_score?dependency-name=nokogiri&amp;package-manager=bundler&amp;previous-version=1.11.7&amp;new-version=1.12.5\"></a></p>\n\n<p>We
+        bump <code>Major.Minor.Patch</code> versions following this guidance:</p>\n\n<p><code>Major</code>:
+        (we’ve never done this)</p>\n<ul>\n<li>\n<p>Significant backwards-incompatible
+        changes to the public API that would require rewriting existing application
+        code.</p>\n</li>\n<li>\n<p>Some examples of backwards-incompatible changes
+        we might someday consider for a Major release are at {<code>ROADMAP.md</code><a
+        href=\"ROADMAP_md.html\">}</a>.</p>\n</li>\n</ul>\n\n<p><code>Minor</code>:</p>\n<ul>\n<li>\n<p>Features
+        and bugfixes.</p>\n</li>\n<li>\n<p>Updating packaged libraries for non-security-related
+        reasons.</p>\n</li>\n<li>\n<p>Dropping support for EOLed Ruby versions. <a
+        href=\"https://github.com/sparklemotion/nokogiri/issues/1568\">Some folks
+        find this objectionable</a>, but <a href=\"https://semver.org/#what-should-i-do-if-i-update-my-own-dependencies-without-changing-the-public-api\">SemVer
+        says this is OK if the public API hasn’t changed</a>.</p>\n</li>\n<li>\n<p>Backwards-incompatible
+        changes to internal or private methods and constants. These are detailed in
+        the “Changes” section of each changelog entry.</p>\n</li>\n<li>\n<p>Removal
+        of deprecated methods or parameters, after a generous transition period; usually
+        when those methods or parameters are rarely-used or dangerous to the user.
+        Essentially, removals that do not justify a major version bump.</p>\n</li>\n</ul>\n\n<p><code>Patch</code>:</p>\n<ul>\n<li>\n<p>Bugfixes.</p>\n</li>\n<li>\n<p>Security
+        updates.</p>\n</li>\n<li>\n<p>Updating packaged libraries for security-related
+        reasons.</p>\n</li>\n</ul>\n\n<h3 id=\"label-Sponsorship\">Sponsorship<span><a
+        href=\"#label-Sponsorship\">¶</a> <a href=\"#top\">↑</a></span>\n</h3>\n\n<p>You
+        can help sponsor the maintainers of this software through one of these organizations:</p>\n<ul>\n<li>\n<p><a
+        href=\"https://github.com/sponsors/flavorjones\">github.com/sponsors/flavorjones</a></p>\n</li>\n<li>\n<p><a
+        href=\"https://opencollective.com/nokogiri\">opencollective.com/nokogiri</a></p>\n</li>\n<li>\n<p><a
+        href=\"https://tidelift.com/subscription/pkg/rubygems-nokogiri?utm_source=rubygems-nokogiri&amp;utm_medium=referral&amp;utm_campaign=readme\">tidelift.com/subscription/pkg/rubygems-nokogiri</a></p>\n</li>\n</ul>\n\n<h2
+        id=\"label-Installation\">Installation<span><a href=\"#label-Installation\">¶</a>
+        <a href=\"#top\">↑</a></span>\n</h2>\n\n<p>Requirements:</p>\n<ul>\n<li>\n<p>Ruby
+        &gt;= 3.1</p>\n</li>\n<li>\n<p>JRuby &gt;= 9.4.0.0</p>\n</li>\n</ul>\n\n<p>If
+        you are compiling the native extension against a system version of libxml2:</p>\n<ul><li>\n<p>libxml2
+        &gt;= 2.9.2 (recommended &gt;= 2.12.0)</p>\n</li></ul>\n\n<h3 id=\"label-Native+Gems-3A+Faster-2C+more+reliable+installation\">Native
+        Gems: Faster, more reliable installation<span><a href=\"#label-Native+Gems-3A+Faster-2C+more+reliable+installation\">¶</a>
+        <a href=\"#top\">↑</a></span>\n</h3>\n\n<p>“Native gems” contain pre-compiled
+        libraries for a specific machine architecture. On supported platforms, this
+        removes the need for compiling the C extension and the packaged libraries,
+        or for system dependencies to exist. This results in <strong>much faster installation</strong>
+        and <strong>more reliable installation</strong>, which as you probably know
+        are the biggest headaches for <a href=\"Nokogiri.html\"><code>Nokogiri</code></a>
+        users.</p>\n\n<h3 id=\"label-Supported+Platforms\">Supported Platforms<span><a
+        href=\"#label-Supported+Platforms\">¶</a> <a href=\"#top\">↑</a></span>\n</h3>\n\n<p><a
+        href=\"Nokogiri.html\"><code>Nokogiri</code></a> ships pre-compiled, “native”
+        gems for the following platforms:</p>\n<ul>\n<li>\n<p>Linux:</p>\n</li>\n<li>\n<p><code>x86_64-linux-gnu</code>,
+        <code>aarch64-linux-gnu</code>, and <code>arm-linux-gnu</code> (req: <code>glibc
+        &gt;= 2.29</code>)</p>\n</li>\n<li>\n<p><code>x86_64-linux-musl</code>, <code>aarch64-linux-musl</code>,
+        and <code>arm-linux-musl</code></p>\n</li>\n<li>\n<p>Darwin/MacOS: <code>x86_64-darwin</code>
+        and <code>arm64-darwin</code></p>\n</li>\n<li>\n<p>Windows: <code>x64-mingw-ucrt</code></p>\n</li>\n<li>\n<p>Java:
+        any platform running JRuby 9.4 or higher</p>\n</li>\n</ul>\n\n<p>To determine
+        whether your system supports one of these gems, look at the output of <code>bundle
+        platform</code> or <code>ruby -e 'puts Gem::Platform.local.to_s'</code>.</p>\n\n<p>If
+        you’re on a supported platform, either <code>gem install</code> or <code>bundle
+        install</code> should install a native gem without any additional action on
+        your part. This installation should only take a few seconds, and your output
+        should look something like:</p>\n\n<pre>$ gem install nokogiri\nFetching nokogiri-1.11.0-x86_64-linux.gem\nSuccessfully
+        installed nokogiri-1.11.0-x86_64-linux\n1 gem installed</pre>\n\n<h3 id=\"label-Other+Installation+Options\">Other
+        Installation Options<span><a href=\"#label-Other+Installation+Options\">¶</a>
+        <a href=\"#top\">↑</a></span>\n</h3>\n\n<p>Because <a href=\"Nokogiri.html\"><code>Nokogiri</code></a>
+        is a C extension, it requires that you have a C compiler toolchain, Ruby development
+        header files, and some system dependencies installed.</p>\n\n<p>The following
+        may work for you if you have an appropriately-configured system:</p>\n\n<pre
+        class=\"ruby\"><span class=\"ruby-identifier\">gem</span> <span class=\"ruby-identifier\">install</span>
+        <span class=\"ruby-identifier\">nokogiri</span>\n</pre>\n\n<p>If you have
+        any issues, please visit <a href=\"https://nokogiri.org/tutorials/installing_nokogiri.html\">Installing
+        Nokogiri</a> for more complete instructions and troubleshooting.</p>\n\n<h2
+        id=\"label-How+To+Use+Nokogiri\">How To Use <a href=\"Nokogiri.html\"><code>Nokogiri</code></a><span><a
+        href=\"#label-How+To+Use+Nokogiri\">¶</a> <a href=\"#top\">↑</a></span>\n</h2>\n\n<p><a
+        href=\"Nokogiri.html\"><code>Nokogiri</code></a> is a large library, and so
+        it’s challenging to briefly summarize it. We’ve tried to provide long, real-world
+        examples at <a href=\"https://nokogiri.org/tutorials/toc.html\">Tutorials</a>.</p>\n\n<h3
+        id=\"label-Parsing+and+Querying\">Parsing and Querying<span><a href=\"#label-Parsing+and+Querying\">¶</a>
+        <a href=\"#top\">↑</a></span>\n</h3>\n\n<p>Here is example usage for parsing
+        and querying a document:</p>\n\n<pre class=\"ruby\"><span class=\"ruby-comment\">#!
+        /usr/bin/env ruby</span>\n\n<span class=\"ruby-identifier\">require</span>
+        <span class=\"ruby-string\">'nokogiri'</span>\n<span class=\"ruby-identifier\">require</span>
+        <span class=\"ruby-string\">'open-uri'</span>\n\n<span class=\"ruby-comment\">#
+        Fetch and parse HTML document</span>\n<span class=\"ruby-identifier\">doc</span>
+        = <span class=\"ruby-constant\">Nokogiri</span><span class=\"ruby-operator\">::</span><span
+        class=\"ruby-constant\">HTML</span>(<span class=\"ruby-constant\">URI</span>.<span
+        class=\"ruby-identifier\">open</span>(<span class=\"ruby-string\">'https://nokogiri.org/tutorials/installing_nokogiri.html'</span>))\n\n<span
+        class=\"ruby-comment\"># Search for nodes by css</span>\n<span class=\"ruby-identifier\">doc</span>.<span
+        class=\"ruby-identifier\">css</span>(<span class=\"ruby-string\">'nav ul.menu
+        li a'</span>, <span class=\"ruby-string\">'article h2'</span>).<span class=\"ruby-identifier\">each</span>
+        <span class=\"ruby-keyword\">do</span> <span class=\"ruby-operator\">|</span><span
+        class=\"ruby-identifier\">link</span><span class=\"ruby-operator\">|</span>\n
+        \ <span class=\"ruby-identifier\">puts</span> <span class=\"ruby-identifier\">link</span>.<span
+        class=\"ruby-identifier\">content</span>\n<span class=\"ruby-keyword\">end</span>\n\n<span
+        class=\"ruby-comment\"># Search for nodes by xpath</span>\n<span class=\"ruby-identifier\">doc</span>.<span
+        class=\"ruby-identifier\">xpath</span>(<span class=\"ruby-string\">'//nav//ul//li/a'</span>,
+        <span class=\"ruby-string\">'//article//h2'</span>).<span class=\"ruby-identifier\">each</span>
+        <span class=\"ruby-keyword\">do</span> <span class=\"ruby-operator\">|</span><span
+        class=\"ruby-identifier\">link</span><span class=\"ruby-operator\">|</span>\n
+        \ <span class=\"ruby-identifier\">puts</span> <span class=\"ruby-identifier\">link</span>.<span
+        class=\"ruby-identifier\">content</span>\n<span class=\"ruby-keyword\">end</span>\n\n<span
+        class=\"ruby-comment\"># Or mix and match</span>\n<span class=\"ruby-identifier\">doc</span>.<span
+        class=\"ruby-identifier\">search</span>(<span class=\"ruby-string\">'nav ul.menu
+        li a'</span>, <span class=\"ruby-string\">'//article//h2'</span>).<span class=\"ruby-identifier\">each</span>
+        <span class=\"ruby-keyword\">do</span> <span class=\"ruby-operator\">|</span><span
+        class=\"ruby-identifier\">link</span><span class=\"ruby-operator\">|</span>\n
+        \ <span class=\"ruby-identifier\">puts</span> <span class=\"ruby-identifier\">link</span>.<span
+        class=\"ruby-identifier\">content</span>\n<span class=\"ruby-keyword\">end</span>\n</pre>\n\n<h3
+        id=\"label-Encoding\">Encoding<span><a href=\"#label-Encoding\">¶</a> <a href=\"#top\">↑</a></span>\n</h3>\n\n<p>Strings
+        are always stored as UTF-8 internally. Methods that return text values will
+        always return UTF-8 encoded strings. Methods that return a string containing
+        markup (like <code>to_xml</code>, <code>to_html</code> and <code>inner_html</code>)
+        will return a string encoded like the source document.</p>\n\n<p><strong>WARNING</strong></p>\n\n<p>Some
+        documents declare one encoding, but actually use a different one. In these
+        cases, which encoding should the parser choose?</p>\n\n<p>Data is just a stream
+        of bytes. Humans add meaning to that stream. Any particular set of bytes could
+        be valid characters in multiple encodings, so detecting encoding with 100%
+        accuracy is not possible. <code>libxml2</code> does its best, but it can’t
+        be right all the time.</p>\n\n<p>If you want <a href=\"Nokogiri.html\"><code>Nokogiri</code></a>
+        to handle the document encoding properly, your best bet is to explicitly set
+        the encoding. Here is an example of explicitly setting the encoding to EUC-JP
+        on the parser:</p>\n\n<pre class=\"ruby\"><span class=\"ruby-identifier\">doc</span>
+        = <span class=\"ruby-constant\">Nokogiri</span>.<span class=\"ruby-constant\">XML</span>(<span
+        class=\"ruby-string\">'&lt;foo&gt;&lt;bar /&gt;&lt;/foo&gt;'</span>, <span
+        class=\"ruby-keyword\">nil</span>, <span class=\"ruby-string\">'EUC-JP'</span>)\n</pre>\n\n<h2
+        id=\"label-Technical+Overview\">Technical Overview<span><a href=\"#label-Technical+Overview\">¶</a>
+        <a href=\"#top\">↑</a></span>\n</h2>\n\n<h3 id=\"label-Guiding+Principles\">Guiding
+        Principles<span><a href=\"#label-Guiding+Principles\">¶</a> <a href=\"#top\">↑</a></span>\n</h3>\n\n<p>As
+        noted above, two guiding principles of the software are:</p>\n<ul>\n<li>\n<p>be
+        secure-by-default by treating all documents as <strong>untrusted</strong>
+        by default</p>\n</li>\n<li>\n<p>be a <strong>thin-as-reasonable layer</strong>
+        on top of the underlying parsers, and don’t attempt to fix behavioral differences
+        between the parsers</p>\n</li>\n</ul>\n\n<p>Notably, despite all parsers being
+        standards-compliant, there are behavioral inconsistencies between the parsers
+        used in the CRuby and JRuby implementations, and <a href=\"Nokogiri.html\"><code>Nokogiri</code></a>
+        does not and should not attempt to remove these inconsistencies. Instead,
+        we surface these differences in the test suite when they are important/semantic;
+        or we intentionally write tests to depend only on the important/semantic bits
+        (omitting whitespace from regex matchers on results, for example).</p>\n\n<h3
+        id=\"label-CRuby\">CRuby<span><a href=\"#label-CRuby\">¶</a> <a href=\"#top\">↑</a></span>\n</h3>\n\n<p>The
+        Ruby (a.k.a., CRuby, MRI, YARV) implementation is a C extension that depends
+        on libxml2 and libxslt (which in turn depend on zlib and possibly libiconv).</p>\n\n<p>These
+        dependencies are met by default by Nokogiri’s packaged versions of the libxml2
+        and libxslt source code, but a configuration option <code>--use-system-libraries</code>
+        is provided to allow specification of alternative library locations. See <a
+        href=\"https://nokogiri.org/tutorials/installing_nokogiri.html\">Installing
+        Nokogiri</a> for full documentation.</p>\n\n<p>We provide native gems by pre-compiling
+        libxml2 and libxslt (and potentially zlib and libiconv) and packaging them
+        into the gem file. In this case, no compilation is necessary at installation
+        time, which leads to faster and more reliable installation.</p>\n\n<p>See
+        {<code>LICENSE-DEPENDENCIES.md</code><a href=\"LICENSE-DEPENDENCIES_md.html\">}</a>
+        for more information on which dependencies are provided in which native and
+        source gems.</p>\n\n<h3 id=\"label-JRuby\">JRuby<span><a href=\"#label-JRuby\">¶</a>
+        <a href=\"#top\">↑</a></span>\n</h3>\n\n<p>The Java (a.k.a. JRuby) implementation
+        is a Java extension that depends primarily on Xerces and NekoHTML for parsing,
+        though additional dependencies are on <code>isorelax</code>, <code>nekodtd</code>,
+        <code>jing</code>, <code>serializer</code>, <code>xalan-j</code>, and <code>xml-apis</code>.</p>\n\n<p>These
+        dependencies are provided by pre-compiled jar files packaged in the <code>java</code>
+        platform gem.</p>\n\n<p>See {<code>LICENSE-DEPENDENCIES.md</code><a href=\"LICENSE-DEPENDENCIES_md.html\">}</a>
+        for more information on which dependencies are provided in which native and
+        source gems.</p>\n\n<h2 id=\"label-Contributing\">Contributing<span><a href=\"#label-Contributing\">¶</a>
+        <a href=\"#top\">↑</a></span>\n</h2>\n\n<p>See {<code>CONTRIBUTING.md</code><a
+        href=\"CONTRIBUTING_md.html\">}</a> for an intro guide to developing <a href=\"Nokogiri.html\"><code>Nokogiri</code></a>.</p>\n\n<h2
+        id=\"label-Code+of+Conduct\">Code of Conduct<span><a href=\"#label-Code+of+Conduct\">¶</a>
+        <a href=\"#top\">↑</a></span>\n</h2>\n\n<p>We’ve adopted the Contributor Covenant
+        code of conduct, which you can read in full in {<code>CODE_OF_CONDUCT.md</code><a
+        href=\"CODE_OF_CONDUCT_md.html\">}</a>.</p>\n\n<h2 id=\"label-License\">License<span><a
+        href=\"#label-License\">¶</a> <a href=\"#top\">↑</a></span>\n</h2>\n\n<p>This
+        project is licensed under the terms of the MIT license.</p>\n\n<p>See this
+        license at {<code>LICENSE.md</code><a href=\"LICENSE_md.html\">}</a>.</p>\n\n<h3
+        id=\"label-Dependencies\">Dependencies<span><a href=\"#label-Dependencies\">¶</a>
+        <a href=\"#top\">↑</a></span>\n</h3>\n\n<p>Some additional libraries may be
+        distributed with your version of <a href=\"Nokogiri.html\"><code>Nokogiri</code></a>.
+        Please see {<code>LICENSE-DEPENDENCIES.md</code><a href=\"LICENSE-DEPENDENCIES_md.html\">}</a>
+        for a discussion of the variations as well as the licenses thereof.</p>\n\n<h2
+        id=\"label-Authors\">Authors<span><a href=\"#label-Authors\">¶</a> <a href=\"#top\">↑</a></span>\n</h2>\n<ul>\n<li>\n<p>Mike
+        Dalessio</p>\n</li>\n<li>\n<p>Aaron Patterson</p>\n</li>\n<li>\n<p>Yoko Harada</p>\n</li>\n<li>\n<p>Akinori
+        MUSHA</p>\n</li>\n<li>\n<p>John Shahid</p>\n</li>\n<li>\n<p>Karol Bucek</p>\n</li>\n<li>\n<p>Sam
+        Ruby</p>\n</li>\n<li>\n<p>Craig Barnes</p>\n</li>\n<li>\n<p>Stephen Checkoway</p>\n</li>\n<li>\n<p>Lars
+        Kanis</p>\n</li>\n<li>\n<p>Sergio Arbeo</p>\n</li>\n<li>\n<p>Timothy Elliott</p>\n</li>\n<li>\n<p>Nobuyoshi
+        Nakada</p>\n</li>\n</ul>\n\n</main>\n\n</body>\n</html>\n"
+  recorded_at: Thu, 12 Jun 2025 20:01:22 GMT
+- request:
+    method: get
+    uri: https://nokogiri.org/rdoc/index.html
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.13.1
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      connection:
+      - keep-alive
+      content-length:
+      - '7901'
+      server:
+      - GitHub.com
+      content-type:
+      - text/html; charset=utf-8
+      last-modified:
+      - Mon, 21 Apr 2025 19:19:48 GMT
+      access-control-allow-origin:
+      - "*"
+      etag:
+      - W/"68069a54-7c4f"
+      expires:
+      - Thu, 12 Jun 2025 15:13:02 GMT
+      cache-control:
+      - max-age=600
+      content-encoding:
+      - gzip
+      x-proxy-cache:
+      - MISS
+      x-github-request-id:
+      - D99C:197AA7:3D014B:41FC63:684AEC25
+      accept-ranges:
+      - bytes
+      date:
+      - Thu, 12 Jun 2025 20:01:22 GMT
+      via:
+      - 1.1 varnish
+      age:
+      - '0'
+      x-served-by:
+      - cache-bog-skbo2340057-BOG
+      x-cache:
+      - HIT
+      x-cache-hits:
+      - '1'
+      x-timer:
+      - S1749758483.676249,VS0,VE1
+      vary:
+      - Accept-Encoding
+      x-fastly-request-id:
+      - ecc6622874d7a9f57ac75373faf4a9319766a720
+    body:
+      encoding: UTF-8
+      string: "<!DOCTYPE html>\n<html>\n<head>\n<meta http-equiv=\"Content-Type\"
+        content=\"text/html; charset=UTF-8\">\n<meta charset=\"UTF-8\">\n<meta name=\"viewport\"
+        content=\"width=device-width, initial-scale=1\">\n\n<title>RDoc Documentation</title>\n\n
+        \ <meta name=\"keywords\" content=\"ruby,documentation,RDoc Documentation\">\n\n\n
+        \   <meta name=\"description\" content=\"RDoc Documentation: Nokogiri Nokogiri
+        (鋸) makes it easy and painless to work with XML and HTML from Ruby. It is
+        fast and standards-compliant by relying on native parsers\">\n\n<script type=\"text/javascript\">\n
+        \ var rdoc_rel_prefix = \"./\";\n  var index_rel_prefix = \"./\";\n</script>\n\n<script
+        src=\"./js/navigation.js\" defer></script>\n<script src=\"./js/search.js\"
+        defer></script>\n<script src=\"./js/search_index.js\" defer></script>\n<script
+        src=\"./js/searcher.js\" defer></script>\n<script src=\"./js/darkfish.js\"
+        defer></script>\n\n<link href=\"./css/fonts.css\" rel=\"stylesheet\">\n<link
+        href=\"./css/rdoc.css\" rel=\"stylesheet\">\n<link href=\"./rdoc-tweaks.css\"
+        rel=\"stylesheet\">\n\n\n<!-- Global site tag (gtag.js) - Google Analytics
+        -->\n<script async src=\"https://www.googletagmanager.com/gtag/js?id=G-BZR5RZN084\"></script>\n<script>\n
+        \ window.dataLayer = window.dataLayer || [];\n  function gtag(){dataLayer.push(arguments);}\n
+        \ gtag('js', new Date());\n\n  gtag('config', 'G-BZR5RZN084');\n</script>\n</head>\n<body
+        id=\"top\" role=\"document\" class=\"file\">\n<div id=\"navigation-toggle\"
+        role=\"button\" tabindex=\"0\" aria-label=\"Toggle sidebar\" aria-expanded=\"true\"
+        aria-controls=\"navigation\">\n  <span aria-hidden=\"true\">☰</span>\n</div>\n\n\n<nav
+        id=\"navigation\" role=\"navigation\">\n  <div id=\"project-navigation\">\n
+        \   <div id=\"home-section\" role=\"region\" title=\"Quick navigation\" class=\"nav-section\">\n
+        \ <h2>\n    <a href=\"./index.html\" rel=\"home\">Home</a>\n  </h2>\n\n  <div
+        id=\"table-of-contents-navigation\">\n    <a href=\"./table_of_contents.html#pages\">Pages</a>\n
+        \   <a href=\"./table_of_contents.html#classes\">Classes</a>\n    <a href=\"./table_of_contents.html#methods\">Methods</a>\n
+        \ </div>\n</div>\n\n    <div id=\"search-section\" role=\"search\" class=\"project-section
+        initially-hidden\">\n  <form action=\"#\" method=\"get\" accept-charset=\"utf-8\">\n
+        \   <div id=\"search-field-wrapper\">\n      <input id=\"search-field\" role=\"combobox\"
+        aria-label=\"Search\" aria-autocomplete=\"list\" aria-controls=\"search-results\"
+        type=\"text\" name=\"search\" placeholder=\"Search (/) for a class, method,
+        ...\" spellcheck=\"false\" title=\"Type to search, Up and Down to navigate,
+        Enter to load\">\n    </div>\n\n    <ul id=\"search-results\" aria-label=\"Search
+        Results\" aria-busy=\"false\" aria-expanded=\"false\" aria-atomic=\"false\"
+        class=\"initially-hidden\"></ul>\n  </form>\n</div>\n\n  </div>\n\n  \n<div
+        id=\"fileindex-section\" class=\"nav-section\">\n  <h3>Pages</h3>\n\n  <ul
+        class=\"link-list\">\n    <li>\n<a href=\"./README_md.html\">README</a>\n
+        \ </li>\n</ul>\n</div>\n\n  <div id=\"classindex-section\" class=\"nav-section\">\n
+        \ <h3>Class and Module Index</h3>\n\n  <ul class=\"link-list\">\n  <li>\n<details><summary><code><a
+        href=\"./Nokogiri.html\">Nokogiri</a></code></summary>\n  <ul class=\"link-list\">\n
+        \ <li>\n<details><summary><code><a href=\"./Nokogiri/CSS.html\">CSS</a></code></summary>\n
+        \ <ul class=\"link-list\">\n  <li>\n<code><a href=\"./Nokogiri/CSS/SyntaxError.html\">SyntaxError</a></code>\n
+        \ </li>\n<li>\n<details><summary><code><a href=\"./Nokogiri/CSS/XPathVisitor.html\">XPathVisitor</a></code></summary>\n
+        \ <ul class=\"link-list\">\n  <li>\n<code><a href=\"./Nokogiri/CSS/XPathVisitor/BuiltinsConfig.html\">BuiltinsConfig</a></code>\n
+        \ </li>\n<li>\n<code><a href=\"./Nokogiri/CSS/XPathVisitor/DoctypeConfig.html\">DoctypeConfig</a></code>\n
+        \ </li>\n</ul></details>\n  </li>\n</ul></details>\n  </li>\n<li>\n<code><a
+        href=\"./Nokogiri/ClassResolver.html\">ClassResolver</a></code>\n  </li>\n<li>\n<details><summary><code><a
+        href=\"./Nokogiri/Decorators.html\">Decorators</a></code></summary>\n  <ul
+        class=\"link-list\">\n  <li>\n<code><a href=\"./Nokogiri/Decorators/Slop.html\">Slop</a></code>\n
+        \ </li>\n</ul></details>\n  </li>\n<li>\n<code><a href=\"./Nokogiri/EncodingHandler.html\">EncodingHandler</a></code>\n
+        \ </li>\n<li>\n<code><a href=\"./Nokogiri/Gumbo.html\">Gumbo</a></code>\n
+        \ </li>\n<li>\n<details><summary><code><a href=\"./Nokogiri/HTML4.html\">HTML</a></code></summary>\n
+        \ <ul class=\"link-list\">\n  <li>\n<code><a href=\"./Nokogiri/HTML/Builder.html\">Builder</a></code>\n
+        \ </li>\n<li>\n<code><a href=\"./Nokogiri/HTML/Document.html\">Document</a></code>\n
+        \ </li>\n<li>\n<code><a href=\"./Nokogiri/HTML/DocumentFragment.html\">DocumentFragment</a></code>\n
+        \ </li>\n</ul></details>\n  </li>\n<li>\n<details><summary><code><a href=\"./Nokogiri/HTML4.html\">HTML4</a></code></summary>\n
+        \ <ul class=\"link-list\">\n  <li>\n<code><a href=\"./Nokogiri/HTML4/Builder.html\">Builder</a></code>\n
+        \ </li>\n<li>\n<code><a href=\"./Nokogiri/HTML4/Document.html\">Document</a></code>\n
+        \ </li>\n<li>\n<code><a href=\"./Nokogiri/HTML4/DocumentFragment.html\">DocumentFragment</a></code>\n
+        \ </li>\n<li>\n<code><a href=\"./Nokogiri/HTML4/ElementDescription.html\">ElementDescription</a></code>\n
+        \ </li>\n<li>\n<code><a href=\"./Nokogiri/HTML4/EntityDescription.html\">EntityDescription</a></code>\n
+        \ </li>\n<li>\n<code><a href=\"./Nokogiri/HTML4/EntityLookup.html\">EntityLookup</a></code>\n
+        \ </li>\n<li>\n<details><summary><code><a href=\"./Nokogiri/HTML4/SAX.html\">SAX</a></code></summary>\n
+        \ <ul class=\"link-list\">\n  <li>\n<code><a href=\"./Nokogiri/HTML4/SAX/Parser.html\">Parser</a></code>\n
+        \ </li>\n<li>\n<code><a href=\"./Nokogiri/HTML4/SAX/ParserContext.html\">ParserContext</a></code>\n
+        \ </li>\n<li>\n<code><a href=\"./Nokogiri/HTML4/SAX/PushParser.html\">PushParser</a></code>\n
+        \ </li>\n</ul></details>\n  </li>\n</ul></details>\n  </li>\n<li>\n<details><summary><code><a
+        href=\"./Nokogiri/HTML5.html\">HTML5</a></code></summary>\n  <ul class=\"link-list\">\n
+        \ <li>\n<code><a href=\"./Nokogiri/HTML5/Builder.html\">Builder</a></code>\n
+        \ </li>\n<li>\n<code><a href=\"./Nokogiri/HTML5/Document.html\">Document</a></code>\n
+        \ </li>\n<li>\n<code><a href=\"./Nokogiri/HTML5/DocumentFragment.html\">DocumentFragment</a></code>\n
+        \ </li>\n<li>\n<code><a href=\"./Nokogiri/HTML5/Node.html\">Node</a></code>\n
+        \ </li>\n<li>\n<code><a href=\"./Nokogiri/HTML5/QuirksMode.html\">QuirksMode</a></code>\n
+        \ </li>\n</ul></details>\n  </li>\n<li>\n<code><a href=\"./Nokogiri/SyntaxError.html\">SyntaxError</a></code>\n
+        \ </li>\n<li>\n<details><summary><code><a href=\"./Nokogiri/XML.html\">XML</a></code></summary>\n
+        \ <ul class=\"link-list\">\n  <li>\n<code><a href=\"./Nokogiri/XML/Attr.html\">Attr</a></code>\n
+        \ </li>\n<li>\n<code><a href=\"./Nokogiri/XML/AttributeDecl.html\">AttributeDecl</a></code>\n
+        \ </li>\n<li>\n<code><a href=\"./Nokogiri/XML/Builder.html\">Builder</a></code>\n
+        \ </li>\n<li>\n<code><a href=\"./Nokogiri/XML/CDATA.html\">CDATA</a></code>\n
+        \ </li>\n<li>\n<code><a href=\"./Nokogiri/XML/CharacterData.html\">CharacterData</a></code>\n
+        \ </li>\n<li>\n<code><a href=\"./Nokogiri/XML/Comment.html\">Comment</a></code>\n
+        \ </li>\n<li>\n<code><a href=\"./Nokogiri/XML/DTD.html\">DTD</a></code>\n
+        \ </li>\n<li>\n<code><a href=\"./Nokogiri/XML/Document.html\">Document</a></code>\n
+        \ </li>\n<li>\n<code><a href=\"./Nokogiri/XML/DocumentFragment.html\">DocumentFragment</a></code>\n
+        \ </li>\n<li>\n<code><a href=\"./Nokogiri/XML/Element.html\">Element</a></code>\n
+        \ </li>\n<li>\n<code><a href=\"./Nokogiri/XML/ElementContent.html\">ElementContent</a></code>\n
+        \ </li>\n<li>\n<code><a href=\"./Nokogiri/XML/ElementDecl.html\">ElementDecl</a></code>\n
+        \ </li>\n<li>\n<code><a href=\"./Nokogiri/XML/EntityDecl.html\">EntityDecl</a></code>\n
+        \ </li>\n<li>\n<code><a href=\"./Nokogiri/XML/EntityReference.html\">EntityReference</a></code>\n
+        \ </li>\n<li>\n<code><a href=\"./Nokogiri/XML/Namespace.html\">Namespace</a></code>\n
+        \ </li>\n<li>\n<details><summary><code><a href=\"./Nokogiri/XML/Node.html\">Node</a></code></summary>\n
+        \ <ul class=\"link-list\">\n  <li>\n<code><a href=\"./Nokogiri/XML/Node/SaveOptions.html\">SaveOptions</a></code>\n
+        \ </li>\n</ul></details>\n  </li>\n<li>\n<code><a href=\"./Nokogiri/XML/NodeSet.html\">NodeSet</a></code>\n
+        \ </li>\n<li>\n<code><a href=\"./Nokogiri/XML/Notation.html\">Notation</a></code>\n
+        \ </li>\n<li>\n<code><a href=\"./Nokogiri/XML/ParseOptions.html\">ParseOptions</a></code>\n
+        \ </li>\n<li>\n<code><a href=\"./Nokogiri/XML/ProcessingInstruction.html\">ProcessingInstruction</a></code>\n
+        \ </li>\n<li>\n<code><a href=\"./Nokogiri/XML/Reader.html\">Reader</a></code>\n
+        \ </li>\n<li>\n<code><a href=\"./Nokogiri/XML/RelaxNG.html\">RelaxNG</a></code>\n
+        \ </li>\n<li>\n<details><summary><code><a href=\"./Nokogiri/XML/SAX.html\">SAX</a></code></summary>\n
+        \ <ul class=\"link-list\">\n  <li>\n<code><a href=\"./Nokogiri/XML/SAX/Document.html\">Document</a></code>\n
+        \ </li>\n<li>\n<details><summary><code><a href=\"./Nokogiri/XML/SAX/Parser.html\">Parser</a></code></summary>\n
+        \ <ul class=\"link-list\">\n  <li>\n<code><a href=\"./Nokogiri/XML/SAX/Parser/Attribute.html\">Attribute</a></code>\n
+        \ </li>\n</ul></details>\n  </li>\n<li>\n<code><a href=\"./Nokogiri/XML/SAX/ParserContext.html\">ParserContext</a></code>\n
+        \ </li>\n<li>\n<code><a href=\"./Nokogiri/XML/SAX/PushParser.html\">PushParser</a></code>\n
+        \ </li>\n</ul></details>\n  </li>\n<li>\n<code><a href=\"./Nokogiri/XML/Schema.html\">Schema</a></code>\n
+        \ </li>\n<li>\n<code><a href=\"./Nokogiri/XML/Searchable.html\">Searchable</a></code>\n
+        \ </li>\n<li>\n<code><a href=\"./Nokogiri/XML/SyntaxError.html\">SyntaxError</a></code>\n
+        \ </li>\n<li>\n<code><a href=\"./Nokogiri/XML/Text.html\">Text</a></code>\n
+        \ </li>\n<li>\n<details><summary><code><a href=\"./Nokogiri/XML/XPath.html\">XPath</a></code></summary>\n
+        \ <ul class=\"link-list\">\n  <li>\n<code><a href=\"./Nokogiri/XML/XPath/SyntaxError.html\">SyntaxError</a></code>\n
+        \ </li>\n</ul></details>\n  </li>\n<li>\n<code><a href=\"./Nokogiri/XML/XPathContext.html\">XPathContext</a></code>\n
+        \ </li>\n</ul></details>\n  </li>\n<li>\n<details><summary><code><a href=\"./Nokogiri/XSLT.html\">XSLT</a></code></summary>\n
+        \ <ul class=\"link-list\">\n  <li>\n<code><a href=\"./Nokogiri/XSLT/Stylesheet.html\">Stylesheet</a></code>\n
+        \ </li>\n</ul></details>\n  </li>\n</ul></details>\n  </li>\n<li>\n<code><a
+        href=\"./Object.html\">Object</a></code>\n  </li>\n<li>\n<details><summary><code><a
+        href=\"./XSD.html\">XSD</a></code></summary>\n  <ul class=\"link-list\">\n
+        \ <li>\n<details><summary><code><a href=\"./XSD/XMLParser.html\">XMLParser</a></code></summary>\n
+        \ <ul class=\"link-list\">\n  <li>\n<code><a href=\"./XSD/XMLParser/Nokogiri.html\">Nokogiri</a></code>\n
+        \ </li>\n</ul></details>\n  </li>\n</ul></details>\n</li>\n</ul>\n</div>\n\n\n
+        \ <footer id=\"validator-badges\" role=\"contentinfo\">\n  <p><a href=\"https://validator.w3.org/check/referer\">Validate</a>\n
+        \ </p>\n<p>Generated by <a href=\"https://ruby.github.io/rdoc/\">RDoc</a>
+        6.10.0.\n  </p>\n<p>Based on <a href=\"http://deveiate.org/projects/Darkfish-RDoc/\">Darkfish</a>
+        by <a href=\"http://deveiate.org\">Michael Granger</a>.\n</p></footer>\n\n</nav>\n\n<main
+        role=\"main\">\n\n<div><img src=\"https://nokogiri.org/images/nokogiri-serif-black.png\"
+        align=\"right\"></div>\n<h1 id=\"label-Nokogiri\">\n<a href=\"Nokogiri.html\"><code>Nokogiri</code></a><span><a
+        href=\"#label-Nokogiri\">¶</a> <a href=\"#top\">↑</a></span>\n</h1>\n\n<p><a
+        href=\"Nokogiri.html\"><code>Nokogiri</code></a> (鋸) makes it easy and painless
+        to work with XML and HTML from Ruby. It provides a sensible, easy-to-understand
+        API for <a href=\"https://nokogiri.org/tutorials/parsing_an_html_xml_document.html\">reading</a>,
+        writing, <a href=\"https://nokogiri.org/tutorials/modifying_an_html_xml_document.html\">modifying</a>,
+        and <a href=\"https://nokogiri.org/tutorials/searching_a_xml_html_document.html\">querying</a>
+        documents. It is fast and standards-compliant by relying on native parsers
+        like libxml2, libgumbo, and xerces.</p>\n\n<h2 id=\"label-Guiding+Principles\">Guiding
+        Principles<span><a href=\"#label-Guiding+Principles\">¶</a> <a href=\"#top\">↑</a></span>\n</h2>\n\n<p>Some
+        guiding principles <a href=\"Nokogiri.html\"><code>Nokogiri</code></a> tries
+        to follow:</p>\n<ul>\n<li>\n<p>be secure-by-default by treating all documents
+        as <strong>untrusted</strong> by default</p>\n</li>\n<li>\n<p>be a <strong>thin-as-reasonable
+        layer</strong> on top of the underlying parsers, and don’t attempt to fix
+        behavioral differences between the parsers</p>\n</li>\n</ul>\n\n<h2 id=\"label-Features+Overview\">Features
+        Overview<span><a href=\"#label-Features+Overview\">¶</a> <a href=\"#top\">↑</a></span>\n</h2>\n<ul>\n<li>\n<p>DOM
+        Parser for XML, HTML4, and HTML5</p>\n</li>\n<li>\n<p>SAX Parser for XML and
+        HTML4</p>\n</li>\n<li>\n<p>Push Parser for XML and HTML4</p>\n</li>\n<li>\n<p>Document
+        search via XPath 1.0</p>\n</li>\n<li>\n<p>Document search via CSS3 selectors,
+        with some jquery-like extensions</p>\n</li>\n<li>\n<p><a href=\"XSD.html\"><code>XSD</code></a>
+        Schema validation</p>\n</li>\n<li>\n<p>XSLT transformation</p>\n</li>\n<li>\n<p>“Builder”
+        DSL for XML and HTML documents</p>\n</li>\n</ul>\n\n<h2 id=\"label-Status\">Status<span><a
+        href=\"#label-Status\">¶</a> <a href=\"#top\">↑</a></span>\n</h2>\n\n<p><a
+        href=\"https://github.com/sparklemotion/nokogiri/actions/workflows/ci.yml\"><img
+        src=\"https://github.com/sparklemotion/nokogiri/actions/workflows/ci.yml/badge.svg?branch=main\"></a>
+        <a href=\"https://ci.appveyor.com/project/flavorjones/nokogiri/branch/main\"><img
+        src=\"https://ci.appveyor.com/api/projects/status/xj2pqwvlxwuwgr06/branch/main?svg=true\"></a></p>\n\n<p><a
+        href=\"https://rubygems.org/gems/nokogiri\"><img src=\"https://badge.fury.io/rb/nokogiri.svg\"></a>
+        <a href=\"https://docs.github.com/en/code-security/supply-chain-security/managing-vulnerabilities-in-your-projects-dependencies/about-dependabot-security-updates#about-compatibility-scores\"><img
+        src=\"https://dependabot-badges.githubapp.com/badges/compatibility_score?dependency-name=nokogiri&amp;package-manager=bundler&amp;previous-version=1.11.7&amp;new-version=1.12.5\"></a></p>\n\n<p><a
+        href=\"https://bestpractices.coreinfrastructure.org/projects/5344\"><img src=\"https://bestpractices.coreinfrastructure.org/projects/5344/badge\"></a>
+        <a href=\"https://tidelift.com/subscription/pkg/rubygems-nokogiri?utm_source=rubygems-nokogiri&amp;utm_medium=referral&amp;utm_campaign=readme\"><img
+        src=\"https://tidelift.com/badges/package/rubygems/nokogiri\"></a></p>\n\n<h2
+        id=\"label-Support-2C+Getting+Help-2C+and+Reporting+Issues\">Support, Getting
+        Help, and Reporting Issues<span><a href=\"#label-Support-2C+Getting+Help-2C+and+Reporting+Issues\">¶</a>
+        <a href=\"#top\">↑</a></span>\n</h2>\n\n<p>All official documentation is posted
+        at <a href=\"https://nokogiri.org\">nokogiri.org</a> (the source for which
+        is at <a href=\"https://github.com/sparklemotion/nokogiri.org\">github.com/sparklemotion/nokogiri.org</a>/,
+        and we welcome contributions).</p>\n\n<h3 id=\"label-Reading\">Reading<span><a
+        href=\"#label-Reading\">¶</a> <a href=\"#top\">↑</a></span>\n</h3>\n\n<p>Your
+        first stops for learning more about <a href=\"Nokogiri.html\"><code>Nokogiri</code></a>
+        should be:</p>\n<ul>\n<li>\n<p><a href=\"https://nokogiri.org/rdoc/index.html\">API
+        Documentation</a></p>\n</li>\n<li>\n<p><a href=\"https://nokogiri.org/tutorials/toc.html\">Tutorials</a></p>\n</li>\n<li>\n<p>An
+        excellent community-maintained <a href=\"https://github.com/sparklemotion/nokogiri/wiki/Cheat-sheet\">Cheat
+        Sheet</a></p>\n</li>\n</ul>\n\n<h3 id=\"label-Ask+For+Help\">Ask For Help<span><a
+        href=\"#label-Ask+For+Help\">¶</a> <a href=\"#top\">↑</a></span>\n</h3>\n\n<p>There
+        are a few ways to ask exploratory questions:</p>\n<ul>\n<li>\n<p>The <a href=\"Nokogiri.html\"><code>Nokogiri</code></a>
+        mailing list is active at <a href=\"https://groups.google.com/group/nokogiri-talk\">groups.google.com/group/nokogiri-talk</a></p>\n</li>\n<li>\n<p>Open
+        an issue using the “Help Request” template at <a href=\"https://github.com/sparklemotion/nokogiri/issues\">github.com/sparklemotion/nokogiri/issues</a></p>\n</li>\n<li>\n<p>Open
+        a discussion at <a href=\"https://github.com/sparklemotion/nokogiri/discussions\">github.com/sparklemotion/nokogiri/discussions</a></p>\n</li>\n</ul>\n\n<p>Please
+        do not mail the maintainers at their personal addresses.</p>\n\n<h3 id=\"label-Report+A+Bug\">Report
+        A Bug<span><a href=\"#label-Report+A+Bug\">¶</a> <a href=\"#top\">↑</a></span>\n</h3>\n\n<p>The
+        <a href=\"Nokogiri.html\"><code>Nokogiri</code></a> bug tracker is at <a href=\"https://github.com/sparklemotion/nokogiri/issues\">github.com/sparklemotion/nokogiri/issues</a></p>\n\n<p>Please
+        use the “Bug Report” or “Installation Difficulties” templates.</p>\n\n<h3
+        id=\"label-Security+and+Vulnerability+Reporting\">Security and Vulnerability
+        Reporting<span><a href=\"#label-Security+and+Vulnerability+Reporting\">¶</a>
+        <a href=\"#top\">↑</a></span>\n</h3>\n\n<p>Please report vulnerabilities at
+        <a href=\"https://hackerone.com/nokogiri\">hackerone.com/nokogiri</a></p>\n\n<p>Full
+        information and description of our security policy is in {<code>SECURITY.md</code><a
+        href=\"SECURITY_md.html\">}</a></p>\n\n<h3 id=\"label-Semantic+Versioning+Policy\">Semantic
+        Versioning Policy<span><a href=\"#label-Semantic+Versioning+Policy\">¶</a>
+        <a href=\"#top\">↑</a></span>\n</h3>\n\n<p><a href=\"Nokogiri.html\"><code>Nokogiri</code></a>
+        follows <a href=\"https://semver.org/\">Semantic Versioning</a> (since 2017
+        or so). <a href=\"https://docs.github.com/en/code-security/supply-chain-security/managing-vulnerabilities-in-your-projects-dependencies/about-dependabot-security-updates#about-compatibility-scores\"><img
+        src=\"https://dependabot-badges.githubapp.com/badges/compatibility_score?dependency-name=nokogiri&amp;package-manager=bundler&amp;previous-version=1.11.7&amp;new-version=1.12.5\"></a></p>\n\n<p>We
+        bump <code>Major.Minor.Patch</code> versions following this guidance:</p>\n\n<p><code>Major</code>:
+        (we’ve never done this)</p>\n<ul>\n<li>\n<p>Significant backwards-incompatible
+        changes to the public API that would require rewriting existing application
+        code.</p>\n</li>\n<li>\n<p>Some examples of backwards-incompatible changes
+        we might someday consider for a Major release are at {<code>ROADMAP.md</code><a
+        href=\"ROADMAP_md.html\">}</a>.</p>\n</li>\n</ul>\n\n<p><code>Minor</code>:</p>\n<ul>\n<li>\n<p>Features
+        and bugfixes.</p>\n</li>\n<li>\n<p>Updating packaged libraries for non-security-related
+        reasons.</p>\n</li>\n<li>\n<p>Dropping support for EOLed Ruby versions. <a
+        href=\"https://github.com/sparklemotion/nokogiri/issues/1568\">Some folks
+        find this objectionable</a>, but <a href=\"https://semver.org/#what-should-i-do-if-i-update-my-own-dependencies-without-changing-the-public-api\">SemVer
+        says this is OK if the public API hasn’t changed</a>.</p>\n</li>\n<li>\n<p>Backwards-incompatible
+        changes to internal or private methods and constants. These are detailed in
+        the “Changes” section of each changelog entry.</p>\n</li>\n<li>\n<p>Removal
+        of deprecated methods or parameters, after a generous transition period; usually
+        when those methods or parameters are rarely-used or dangerous to the user.
+        Essentially, removals that do not justify a major version bump.</p>\n</li>\n</ul>\n\n<p><code>Patch</code>:</p>\n<ul>\n<li>\n<p>Bugfixes.</p>\n</li>\n<li>\n<p>Security
+        updates.</p>\n</li>\n<li>\n<p>Updating packaged libraries for security-related
+        reasons.</p>\n</li>\n</ul>\n\n<h3 id=\"label-Sponsorship\">Sponsorship<span><a
+        href=\"#label-Sponsorship\">¶</a> <a href=\"#top\">↑</a></span>\n</h3>\n\n<p>You
+        can help sponsor the maintainers of this software through one of these organizations:</p>\n<ul>\n<li>\n<p><a
+        href=\"https://github.com/sponsors/flavorjones\">github.com/sponsors/flavorjones</a></p>\n</li>\n<li>\n<p><a
+        href=\"https://opencollective.com/nokogiri\">opencollective.com/nokogiri</a></p>\n</li>\n<li>\n<p><a
+        href=\"https://tidelift.com/subscription/pkg/rubygems-nokogiri?utm_source=rubygems-nokogiri&amp;utm_medium=referral&amp;utm_campaign=readme\">tidelift.com/subscription/pkg/rubygems-nokogiri</a></p>\n</li>\n</ul>\n\n<h2
+        id=\"label-Installation\">Installation<span><a href=\"#label-Installation\">¶</a>
+        <a href=\"#top\">↑</a></span>\n</h2>\n\n<p>Requirements:</p>\n<ul>\n<li>\n<p>Ruby
+        &gt;= 3.1</p>\n</li>\n<li>\n<p>JRuby &gt;= 9.4.0.0</p>\n</li>\n</ul>\n\n<p>If
+        you are compiling the native extension against a system version of libxml2:</p>\n<ul><li>\n<p>libxml2
+        &gt;= 2.9.2 (recommended &gt;= 2.12.0)</p>\n</li></ul>\n\n<h3 id=\"label-Native+Gems-3A+Faster-2C+more+reliable+installation\">Native
+        Gems: Faster, more reliable installation<span><a href=\"#label-Native+Gems-3A+Faster-2C+more+reliable+installation\">¶</a>
+        <a href=\"#top\">↑</a></span>\n</h3>\n\n<p>“Native gems” contain pre-compiled
+        libraries for a specific machine architecture. On supported platforms, this
+        removes the need for compiling the C extension and the packaged libraries,
+        or for system dependencies to exist. This results in <strong>much faster installation</strong>
+        and <strong>more reliable installation</strong>, which as you probably know
+        are the biggest headaches for <a href=\"Nokogiri.html\"><code>Nokogiri</code></a>
+        users.</p>\n\n<h3 id=\"label-Supported+Platforms\">Supported Platforms<span><a
+        href=\"#label-Supported+Platforms\">¶</a> <a href=\"#top\">↑</a></span>\n</h3>\n\n<p><a
+        href=\"Nokogiri.html\"><code>Nokogiri</code></a> ships pre-compiled, “native”
+        gems for the following platforms:</p>\n<ul>\n<li>\n<p>Linux:</p>\n</li>\n<li>\n<p><code>x86_64-linux-gnu</code>,
+        <code>aarch64-linux-gnu</code>, and <code>arm-linux-gnu</code> (req: <code>glibc
+        &gt;= 2.29</code>)</p>\n</li>\n<li>\n<p><code>x86_64-linux-musl</code>, <code>aarch64-linux-musl</code>,
+        and <code>arm-linux-musl</code></p>\n</li>\n<li>\n<p>Darwin/MacOS: <code>x86_64-darwin</code>
+        and <code>arm64-darwin</code></p>\n</li>\n<li>\n<p>Windows: <code>x64-mingw-ucrt</code></p>\n</li>\n<li>\n<p>Java:
+        any platform running JRuby 9.4 or higher</p>\n</li>\n</ul>\n\n<p>To determine
+        whether your system supports one of these gems, look at the output of <code>bundle
+        platform</code> or <code>ruby -e 'puts Gem::Platform.local.to_s'</code>.</p>\n\n<p>If
+        you’re on a supported platform, either <code>gem install</code> or <code>bundle
+        install</code> should install a native gem without any additional action on
+        your part. This installation should only take a few seconds, and your output
+        should look something like:</p>\n\n<pre>$ gem install nokogiri\nFetching nokogiri-1.11.0-x86_64-linux.gem\nSuccessfully
+        installed nokogiri-1.11.0-x86_64-linux\n1 gem installed</pre>\n\n<h3 id=\"label-Other+Installation+Options\">Other
+        Installation Options<span><a href=\"#label-Other+Installation+Options\">¶</a>
+        <a href=\"#top\">↑</a></span>\n</h3>\n\n<p>Because <a href=\"Nokogiri.html\"><code>Nokogiri</code></a>
+        is a C extension, it requires that you have a C compiler toolchain, Ruby development
+        header files, and some system dependencies installed.</p>\n\n<p>The following
+        may work for you if you have an appropriately-configured system:</p>\n\n<pre
+        class=\"ruby\"><span class=\"ruby-identifier\">gem</span> <span class=\"ruby-identifier\">install</span>
+        <span class=\"ruby-identifier\">nokogiri</span>\n</pre>\n\n<p>If you have
+        any issues, please visit <a href=\"https://nokogiri.org/tutorials/installing_nokogiri.html\">Installing
+        Nokogiri</a> for more complete instructions and troubleshooting.</p>\n\n<h2
+        id=\"label-How+To+Use+Nokogiri\">How To Use <a href=\"Nokogiri.html\"><code>Nokogiri</code></a><span><a
+        href=\"#label-How+To+Use+Nokogiri\">¶</a> <a href=\"#top\">↑</a></span>\n</h2>\n\n<p><a
+        href=\"Nokogiri.html\"><code>Nokogiri</code></a> is a large library, and so
+        it’s challenging to briefly summarize it. We’ve tried to provide long, real-world
+        examples at <a href=\"https://nokogiri.org/tutorials/toc.html\">Tutorials</a>.</p>\n\n<h3
+        id=\"label-Parsing+and+Querying\">Parsing and Querying<span><a href=\"#label-Parsing+and+Querying\">¶</a>
+        <a href=\"#top\">↑</a></span>\n</h3>\n\n<p>Here is example usage for parsing
+        and querying a document:</p>\n\n<pre class=\"ruby\"><span class=\"ruby-comment\">#!
+        /usr/bin/env ruby</span>\n\n<span class=\"ruby-identifier\">require</span>
+        <span class=\"ruby-string\">'nokogiri'</span>\n<span class=\"ruby-identifier\">require</span>
+        <span class=\"ruby-string\">'open-uri'</span>\n\n<span class=\"ruby-comment\">#
+        Fetch and parse HTML document</span>\n<span class=\"ruby-identifier\">doc</span>
+        = <span class=\"ruby-constant\">Nokogiri</span><span class=\"ruby-operator\">::</span><span
+        class=\"ruby-constant\">HTML</span>(<span class=\"ruby-constant\">URI</span>.<span
+        class=\"ruby-identifier\">open</span>(<span class=\"ruby-string\">'https://nokogiri.org/tutorials/installing_nokogiri.html'</span>))\n\n<span
+        class=\"ruby-comment\"># Search for nodes by css</span>\n<span class=\"ruby-identifier\">doc</span>.<span
+        class=\"ruby-identifier\">css</span>(<span class=\"ruby-string\">'nav ul.menu
+        li a'</span>, <span class=\"ruby-string\">'article h2'</span>).<span class=\"ruby-identifier\">each</span>
+        <span class=\"ruby-keyword\">do</span> <span class=\"ruby-operator\">|</span><span
+        class=\"ruby-identifier\">link</span><span class=\"ruby-operator\">|</span>\n
+        \ <span class=\"ruby-identifier\">puts</span> <span class=\"ruby-identifier\">link</span>.<span
+        class=\"ruby-identifier\">content</span>\n<span class=\"ruby-keyword\">end</span>\n\n<span
+        class=\"ruby-comment\"># Search for nodes by xpath</span>\n<span class=\"ruby-identifier\">doc</span>.<span
+        class=\"ruby-identifier\">xpath</span>(<span class=\"ruby-string\">'//nav//ul//li/a'</span>,
+        <span class=\"ruby-string\">'//article//h2'</span>).<span class=\"ruby-identifier\">each</span>
+        <span class=\"ruby-keyword\">do</span> <span class=\"ruby-operator\">|</span><span
+        class=\"ruby-identifier\">link</span><span class=\"ruby-operator\">|</span>\n
+        \ <span class=\"ruby-identifier\">puts</span> <span class=\"ruby-identifier\">link</span>.<span
+        class=\"ruby-identifier\">content</span>\n<span class=\"ruby-keyword\">end</span>\n\n<span
+        class=\"ruby-comment\"># Or mix and match</span>\n<span class=\"ruby-identifier\">doc</span>.<span
+        class=\"ruby-identifier\">search</span>(<span class=\"ruby-string\">'nav ul.menu
+        li a'</span>, <span class=\"ruby-string\">'//article//h2'</span>).<span class=\"ruby-identifier\">each</span>
+        <span class=\"ruby-keyword\">do</span> <span class=\"ruby-operator\">|</span><span
+        class=\"ruby-identifier\">link</span><span class=\"ruby-operator\">|</span>\n
+        \ <span class=\"ruby-identifier\">puts</span> <span class=\"ruby-identifier\">link</span>.<span
+        class=\"ruby-identifier\">content</span>\n<span class=\"ruby-keyword\">end</span>\n</pre>\n\n<h3
+        id=\"label-Encoding\">Encoding<span><a href=\"#label-Encoding\">¶</a> <a href=\"#top\">↑</a></span>\n</h3>\n\n<p>Strings
+        are always stored as UTF-8 internally. Methods that return text values will
+        always return UTF-8 encoded strings. Methods that return a string containing
+        markup (like <code>to_xml</code>, <code>to_html</code> and <code>inner_html</code>)
+        will return a string encoded like the source document.</p>\n\n<p><strong>WARNING</strong></p>\n\n<p>Some
+        documents declare one encoding, but actually use a different one. In these
+        cases, which encoding should the parser choose?</p>\n\n<p>Data is just a stream
+        of bytes. Humans add meaning to that stream. Any particular set of bytes could
+        be valid characters in multiple encodings, so detecting encoding with 100%
+        accuracy is not possible. <code>libxml2</code> does its best, but it can’t
+        be right all the time.</p>\n\n<p>If you want <a href=\"Nokogiri.html\"><code>Nokogiri</code></a>
+        to handle the document encoding properly, your best bet is to explicitly set
+        the encoding. Here is an example of explicitly setting the encoding to EUC-JP
+        on the parser:</p>\n\n<pre class=\"ruby\"><span class=\"ruby-identifier\">doc</span>
+        = <span class=\"ruby-constant\">Nokogiri</span>.<span class=\"ruby-constant\">XML</span>(<span
+        class=\"ruby-string\">'&lt;foo&gt;&lt;bar /&gt;&lt;/foo&gt;'</span>, <span
+        class=\"ruby-keyword\">nil</span>, <span class=\"ruby-string\">'EUC-JP'</span>)\n</pre>\n\n<h2
+        id=\"label-Technical+Overview\">Technical Overview<span><a href=\"#label-Technical+Overview\">¶</a>
+        <a href=\"#top\">↑</a></span>\n</h2>\n\n<h3 id=\"label-Guiding+Principles\">Guiding
+        Principles<span><a href=\"#label-Guiding+Principles\">¶</a> <a href=\"#top\">↑</a></span>\n</h3>\n\n<p>As
+        noted above, two guiding principles of the software are:</p>\n<ul>\n<li>\n<p>be
+        secure-by-default by treating all documents as <strong>untrusted</strong>
+        by default</p>\n</li>\n<li>\n<p>be a <strong>thin-as-reasonable layer</strong>
+        on top of the underlying parsers, and don’t attempt to fix behavioral differences
+        between the parsers</p>\n</li>\n</ul>\n\n<p>Notably, despite all parsers being
+        standards-compliant, there are behavioral inconsistencies between the parsers
+        used in the CRuby and JRuby implementations, and <a href=\"Nokogiri.html\"><code>Nokogiri</code></a>
+        does not and should not attempt to remove these inconsistencies. Instead,
+        we surface these differences in the test suite when they are important/semantic;
+        or we intentionally write tests to depend only on the important/semantic bits
+        (omitting whitespace from regex matchers on results, for example).</p>\n\n<h3
+        id=\"label-CRuby\">CRuby<span><a href=\"#label-CRuby\">¶</a> <a href=\"#top\">↑</a></span>\n</h3>\n\n<p>The
+        Ruby (a.k.a., CRuby, MRI, YARV) implementation is a C extension that depends
+        on libxml2 and libxslt (which in turn depend on zlib and possibly libiconv).</p>\n\n<p>These
+        dependencies are met by default by Nokogiri’s packaged versions of the libxml2
+        and libxslt source code, but a configuration option <code>--use-system-libraries</code>
+        is provided to allow specification of alternative library locations. See <a
+        href=\"https://nokogiri.org/tutorials/installing_nokogiri.html\">Installing
+        Nokogiri</a> for full documentation.</p>\n\n<p>We provide native gems by pre-compiling
+        libxml2 and libxslt (and potentially zlib and libiconv) and packaging them
+        into the gem file. In this case, no compilation is necessary at installation
+        time, which leads to faster and more reliable installation.</p>\n\n<p>See
+        {<code>LICENSE-DEPENDENCIES.md</code><a href=\"LICENSE-DEPENDENCIES_md.html\">}</a>
+        for more information on which dependencies are provided in which native and
+        source gems.</p>\n\n<h3 id=\"label-JRuby\">JRuby<span><a href=\"#label-JRuby\">¶</a>
+        <a href=\"#top\">↑</a></span>\n</h3>\n\n<p>The Java (a.k.a. JRuby) implementation
+        is a Java extension that depends primarily on Xerces and NekoHTML for parsing,
+        though additional dependencies are on <code>isorelax</code>, <code>nekodtd</code>,
+        <code>jing</code>, <code>serializer</code>, <code>xalan-j</code>, and <code>xml-apis</code>.</p>\n\n<p>These
+        dependencies are provided by pre-compiled jar files packaged in the <code>java</code>
+        platform gem.</p>\n\n<p>See {<code>LICENSE-DEPENDENCIES.md</code><a href=\"LICENSE-DEPENDENCIES_md.html\">}</a>
+        for more information on which dependencies are provided in which native and
+        source gems.</p>\n\n<h2 id=\"label-Contributing\">Contributing<span><a href=\"#label-Contributing\">¶</a>
+        <a href=\"#top\">↑</a></span>\n</h2>\n\n<p>See {<code>CONTRIBUTING.md</code><a
+        href=\"CONTRIBUTING_md.html\">}</a> for an intro guide to developing <a href=\"Nokogiri.html\"><code>Nokogiri</code></a>.</p>\n\n<h2
+        id=\"label-Code+of+Conduct\">Code of Conduct<span><a href=\"#label-Code+of+Conduct\">¶</a>
+        <a href=\"#top\">↑</a></span>\n</h2>\n\n<p>We’ve adopted the Contributor Covenant
+        code of conduct, which you can read in full in {<code>CODE_OF_CONDUCT.md</code><a
+        href=\"CODE_OF_CONDUCT_md.html\">}</a>.</p>\n\n<h2 id=\"label-License\">License<span><a
+        href=\"#label-License\">¶</a> <a href=\"#top\">↑</a></span>\n</h2>\n\n<p>This
+        project is licensed under the terms of the MIT license.</p>\n\n<p>See this
+        license at {<code>LICENSE.md</code><a href=\"LICENSE_md.html\">}</a>.</p>\n\n<h3
+        id=\"label-Dependencies\">Dependencies<span><a href=\"#label-Dependencies\">¶</a>
+        <a href=\"#top\">↑</a></span>\n</h3>\n\n<p>Some additional libraries may be
+        distributed with your version of <a href=\"Nokogiri.html\"><code>Nokogiri</code></a>.
+        Please see {<code>LICENSE-DEPENDENCIES.md</code><a href=\"LICENSE-DEPENDENCIES_md.html\">}</a>
+        for a discussion of the variations as well as the licenses thereof.</p>\n\n<h2
+        id=\"label-Authors\">Authors<span><a href=\"#label-Authors\">¶</a> <a href=\"#top\">↑</a></span>\n</h2>\n<ul>\n<li>\n<p>Mike
+        Dalessio</p>\n</li>\n<li>\n<p>Aaron Patterson</p>\n</li>\n<li>\n<p>Yoko Harada</p>\n</li>\n<li>\n<p>Akinori
+        MUSHA</p>\n</li>\n<li>\n<p>John Shahid</p>\n</li>\n<li>\n<p>Karol Bucek</p>\n</li>\n<li>\n<p>Sam
+        Ruby</p>\n</li>\n<li>\n<p>Craig Barnes</p>\n</li>\n<li>\n<p>Stephen Checkoway</p>\n</li>\n<li>\n<p>Lars
+        Kanis</p>\n</li>\n<li>\n<p>Sergio Arbeo</p>\n</li>\n<li>\n<p>Timothy Elliott</p>\n</li>\n<li>\n<p>Nobuyoshi
+        Nakada</p>\n</li>\n</ul>\n\n</main>\n\n</body>\n</html>\n"
+  recorded_at: Thu, 12 Jun 2025 20:01:22 GMT
+recorded_with: VCR 6.3.1
