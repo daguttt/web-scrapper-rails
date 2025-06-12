@@ -44,7 +44,7 @@ cp .env.erb .env
 ```
 
 > [!NOTE]
-> Make sure you modify the `<password>` placeholder in `DATABASE_PASSWORD` with your own database password.
+> Make sure you modify the `<password>` placeholder in `DATABASE_URL` with your own database password.
    
 
 ### 2. Set up `master.key`
