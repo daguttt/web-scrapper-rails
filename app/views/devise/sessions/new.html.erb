@@ -1,32 +1,32 @@
 <main class="grid content-center max-w-sm mx-auto p-4 main-min-h">
   <h2 class="text-4xl mb-4">Sign in</h2>
-  <%= form_for(resource, as: resource_name, url: session_path(resource_name), html: { class: "space-y-4 max-w-sm" }) do |f| %>
-    <%= render "partials/flash" %>
-    <%= render "devise/shared/error_messages", resource: resource %>
+  <%= form_for(resource, as: resource_name, url: session_path(resource_name), html: { class: 'space-y-4 max-w-sm' }) do |f| %>
+    <%= render 'partials/flash' %>
+    <%= render 'devise/shared/error_messages', resource: resource %>
     <div>
-      <%= f.label :username, class: "block text-sm font-medium mb-2 dark:text-white" %>
-      <%= f.text_field :username, autofocus: true, autocomplete: "username", class: "py-3 px-4 block w-full border border-gray-200 rounded-lg text-sm focus:border-blue-500 focus:ring-blue-500 disabled:opacity-50 disabled:pointer-events-none dark:bg-neutral-900 dark:border-neutral-700 dark:text-neutral-400 dark:placeholder-neutral-500 dark:focus:ring-neutral-600" %>
+      <%= f.label :username, class: 'block text-sm font-medium mb-2 dark:text-white' %>
+      <%= f.text_field :username, autofocus: true, autocomplete: 'username', class: 'py-3 px-4 block w-full border border-gray-200 rounded-lg text-sm focus:border-blue-500 focus:ring-blue-500 disabled:opacity-50 disabled:pointer-events-none dark:bg-neutral-900 dark:border-neutral-700 dark:text-neutral-400 dark:placeholder-neutral-500 dark:focus:ring-neutral-600' %>
     </div>
     <div>
       <div class="flex justify-between">
-        <%= f.label :password, class: "text-sm font-medium mb-2 dark:text-white" %>
+        <%= f.label :password, class: 'text-sm font-medium mb-2 dark:text-white' %>
         <%- if devise_mapping.recoverable? && controller_name != 'passwords' && controller_name != 'registrations' %>
-          <%= link_to "Forgot your password?", new_password_path(resource_name), class: "text-sm decoration-1 hover:underline focus:outline-none focus:underline" %>
+          <%= link_to 'Forgot your password?', new_password_path(resource_name), class: 'text-sm decoration-1 hover:underline focus:outline-none focus:underline' %>
         <% end %>
       </div>
-      <%= f.password_field :password, autocomplete: "current-password", class: "py-3 px-4 block w-full border border-gray-200 rounded-lg text-sm focus:border-blue-500 focus:ring-blue-500 disabled:opacity-50 disabled:pointer-events-none dark:bg-neutral-900 dark:border-neutral-700 dark:text-neutral-400 dark:placeholder-neutral-500 dark:focus:ring-neutral-600" %>
+      <%= f.password_field :password, autocomplete: 'current-password', class: 'py-3 px-4 block w-full border border-gray-200 rounded-lg text-sm focus:border-blue-500 focus:ring-blue-500 disabled:opacity-50 disabled:pointer-events-none dark:bg-neutral-900 dark:border-neutral-700 dark:text-neutral-400 dark:placeholder-neutral-500 dark:focus:ring-neutral-600' %>
     </div>
     <% if devise_mapping.rememberable? %>
       <div class="flex">
-        <%= f.check_box :remember_me, class: "shrink-0 mt-0.5 border border-gray-200 rounded text-blue-600 focus:ring-blue-500 disabled:opacity-50 disabled:pointer-events-none dark:bg-neutral-800 dark:border-neutral-700 dark:checked:bg-blue-500 dark:checked:border-blue-500 dark:focus:ring-offset-gray-800" %>
-        <%= f.label :remember_me, class: "text-sm text-gray-500 ms-3 dark:text-neutral-400" %>
+        <%= f.check_box :remember_me, class: 'shrink-0 mt-0.5 border border-gray-200 rounded text-blue-600 focus:ring-blue-500 disabled:opacity-50 disabled:pointer-events-none dark:bg-neutral-800 dark:border-neutral-700 dark:checked:bg-blue-500 dark:checked:border-blue-500 dark:focus:ring-offset-gray-800' %>
+        <%= f.label :remember_me, class: 'text-sm text-gray-500 ms-3 dark:text-neutral-400' %>
       </div>
     <% end %>
-    <%= f.submit "Log in", class: "py-3 px-4 w-full max-w-sm inline-flex items-center gap-x-2 text-sm font-medium rounded-lg border border-transparent bg-blue-600 text-white hover:bg-blue-700 focus:outline-none focus:bg-blue-700 disabled:opacity-50 disabled:pointer-events-none" %>
+    <%= f.submit 'Log in', class: 'py-3 px-4 w-full max-w-sm inline-flex items-center gap-x-2 text-sm font-medium rounded-lg border border-transparent bg-blue-600 text-white hover:bg-blue-700 focus:outline-none focus:bg-blue-700 disabled:opacity-50 disabled:pointer-events-none' %>
     <%- if devise_mapping.registerable? && controller_name != 'registrations' %>
       <span class="text-sm text-center block">
         Don't have an account yet?
-        <%= link_to "Sign up", new_registration_path(resource_name), class: "text-blue-600 hover:underline" %>
+        <%= link_to 'Sign up', new_registration_path(resource_name), class: 'text-blue-600 hover:underline' %>
       </span>
     <% end %>
   <% end %>
