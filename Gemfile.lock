@@ -100,6 +100,12 @@ GEM
     drb (2.2.3)
     erb (5.0.1)
     erubi (1.13.1)
+    faraday (2.13.1)
+      faraday-net_http (>= 2.0, < 3.5)
+      json
+      logger
+    faraday-net_http (3.4.0)
+      net-http (>= 0.5.0)
     globalid (1.2.1)
       activesupport (>= 6.1)
     htmlbeautifier (1.4.3)
@@ -133,6 +139,8 @@ GEM
     mini_mime (1.1.5)
     minitest (5.25.5)
     msgpack (1.8.0)
+    net-http (0.6.0)
+      uri
     net-imap (0.5.8)
       date
       net-protocol
@@ -276,6 +284,7 @@ GEM
     unicode-display_width (3.1.4)
       unicode-emoji (~> 4.0, >= 4.0.4)
     unicode-emoji (4.0.4)
+    uri (1.0.3)
     useragent (0.16.11)
     web-console (4.2.1)
       actionview (>= 6.0.0)
@@ -305,9 +314,11 @@ DEPENDENCIES
   brakeman
   debug
   dotenv
+  faraday (~> 2.13, >= 2.13.1)
   htmlbeautifier (~> 1.4, >= 1.4.3)
   importmap-rails
   jbuilder
+  nokogiri (~> 1.18, >= 1.18.8)
   pg (~> 1.1)
   puma (>= 5.0)
   rails (~> 7.2.2, >= 7.2.2.1)

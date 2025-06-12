@@ -1,5 +1,5 @@
 <% content_for :title, 'Pages' %>
-<main class="container max-w-6xl mx-auto px-4 py-8">
+<main class="container mx-auto px-4 py-8">
   <%# Notice %>
   <% if notice.present? %>
     <p class="py-2 px-3 bg-green-50 mb-5 text-green-500 font-medium rounded-md inline-block" id="notice"><%= notice %></p>
@@ -21,26 +21,46 @@
     <% end %>
   </div>
   <%# Pages listing %>
-  <section class="bg-white rounded-lg overflow-hidden">
+  <section>
     <h1 class="font-bold text-4xl mb-4">Pages</h1>
     <div id="pages" class="min-w-full divide-y divide-gray-200 space-y-5 overflow-auto">
       <% if @pages.any? %>
-        <table class="w-full rounded">
+        <table class="w-full rounded-lg overflow-hidden">
           <thead class="bg-gray-100 border-b">
-            <tr>
-              <th class="px-6 py-4 text-left text-sm font-medium text-gray-700">Title</th>
-              <th class="px-6 py-4 text-left text-sm font-medium text-gray-700">Status</th>
-              <th class="px-6 py-4 text-left text-sm font-medium text-gray-700">Total links</th>
-              <th class="px-6 py-4 text-left text-sm font-medium text-gray-700">URL</th>
+            <tr class="text-gray-700">
+              <th class="px-6 py-4 text-left text-sm font-medium">Title</th>
+              <th class="px-6 py-4 text-left text-sm font-medium">Status</th>
+              <th class="px-6 py-4 text-left text-sm font-medium">Total links</th>
+              <th class="px-6 py-4 text-left text-sm font-medium">URL</th>
             </tr>
           </thead>
           <tbody class="divide-y divide-gray-200">
             <% @pages.each do |page| %>
-              <tr class="hover:bg-gray-50 cursor-pointer">
-                <td class="px-6 py-4 text-sm text-gray-900"><%= page.title %></td>
-                <td class="px-6 py-4 text-sm text-gray-900 <%= page.processing? ? 'text-yellow-500' : page.success? ? 'text-green-500' : 'text-red-500' %>"><%= page.status %></td>
-                <td class="px-6 py-4 text-sm text-gray-900">10 <%# TODO: page.links.count %></td>
-                <td class="px-6 py-4 text-sm text-gray-900 max-w-xs truncate" title="<%= page.url %>"><%= page.url %></td>
+              <tr class="hover:bg-gray-50 cursor-pointer text-gray-900">
+                <td class="text-sm font-medium">
+                  <%= link_to page_path(page), class: 'w-max max-w-sm inline-block px-6 py-4 text-sm' do %>
+                    <% if page.title.blank? %>
+                      <em><%= page.processing? ? 'Processing...': 'Failed' %></em> (<span class="text-gray-500"><%= page.url %></span>)
+                    <% else %>
+                      <%= page.title %>
+                    <% end %>
+                  <% end %>
+                </td>
+                <td class="text-sm font-medium <%= page.processing? ? 'text-yellow-500' : page.success? ? 'text-green-500' : 'text-red-500' %>">
+                  <%= link_to page_path(page), class: 'inline-block w-full px-6 py-4 text-sm' do %>
+                    <%= render 'pages/status_badge', status: page.status %>
+                  <% end %>
+                </td>
+                <td class="text-sm font-medium">
+                  <%= link_to page_path(page), class: 'inline-block w-full px-6 py-4 text-sm' do %>
+                    <%= page.links.count %>
+                  <% end %>
+                </td>
+                <td class="text-sm font-medium">
+                  <%= link_to page_path(page), class: 'inline-block w-full px-6 py-4 text-sm max-w-xs truncate' do %>
+                    <%= page.url %>
+                  <% end %>
+                </td>
               </tr>
             <% end %>
           </tbody>

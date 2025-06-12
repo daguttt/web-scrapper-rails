@@ -1,18 +1,57 @@
 <% content_for :title, 'Showing page' %>
-
-<div class="md:w-2/3 w-full">
-  <% if notice.present? %>
-    <p class="py-2 px-3 bg-green-50 mb-5 text-green-500 font-medium rounded-md inline-block" id="notice"><%= notice %></p>
+<main class="container mx-auto px-4 py-8">
+  <%# Back to pages %>
+  <%= link_to pages_path, class: 'inline-flex gap-1 items-center text-blue-600 hover:text-blue-700' do %>
+    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-5">
+      <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 19.5 8.25 12l7.5-7.5" />
+    </svg>
+    <span>Back to pages</span>
   <% end %>
-
-  <h1 class="font-bold text-4xl">Showing page</h1>
-
-  <%= render @page %>
-
-  <%= link_to 'Edit this page', edit_page_path(@page), 
-class: 'w-full sm:w-auto text-center rounded-md px-3.5 py-2.5 bg-gray-100 hover:bg-gray-50 inline-block font-medium' %>
-  <%= link_to 'Back to pages', pages_path, 
-class: 'w-full sm:w-auto text-center mt-2 sm:mt-0 sm:ml-2 rounded-md px-3.5 py-2.5 bg-gray-100 hover:bg-gray-50 inline-block font-medium' %>
-  <%= button_to 'Destroy this page', @page, method: :delete, form_class: 'sm:inline-block mt-2 sm:mt-0 sm:ml-2', 
-class: 'w-full rounded-md px-3.5 py-2.5 text-white bg-red-600 hover:bg-red-500 font-medium cursor-pointer', data: { turbo_confirm: 'Are you sure?' } %>
-</div>
+  <%# Page title %>
+  <h1 class="text-4xl font-bold mt-4"><%= @page.title %></h1>
+  <%# Base URL %>
+  <div class="flex flex-wrap gap-4 items-center mt-4">
+    <p class="flex items-center gap-1">
+      <span>Status:</span>
+      <%= render 'pages/status_badge', status: @page.status %>
+    </p>
+    <p class="flex gap-1 items-center">
+      <span class="w-max">Base URL:</span>
+      <%= link_to @page.url, @page.url, title: @page.url, class: 'inline-block text-blue-600 hover:text-blue-700 max-w-2xl truncate', target: '_blank', rel: 'noopener noreferrer' %>
+    </p>
+  </div>
+  <%# Links table %>
+  <% if @page.links.any? %>
+    <section class="mt-8">
+      <h1 class="text-2xl font-bold">Sublinks</h1>
+      <div class="overflow-auto">
+        <table class="rounded-lg overflow-hidden mt-4">
+          <thead class="bg-gray-100 border-b">
+            <tr class="text-gray-700">
+              <th class="px-6 py-4 text-left text-sm font-medium">Title</th>
+              <th class="px-6 py-4 text-left text-sm font-medium">URL</th>
+            </tr>
+          </thead>
+          <tbody class="divide-y divide-gray-200">
+            <% @page.links.each do |link| %>
+              <tr class="hover:bg-gray-50 cursor-pointer text-gray-900">
+                <td class="px-6 py-4 text-left text-sm font-medium">
+                  <%= link.title %>
+                </td>
+                <td class="text-left text-sm font-medium">
+                  <%= link_to link.url, link.url, title: link.url, class: 'inline-block px-6 py-4 text-blue-600 hover:text-blue-700 max-w-xl truncate', target: '_blank', rel: 'noopener noreferrer' %>
+                </td>
+              </tr>
+            <% end %>
+          </tbody>
+        </table>
+      </div>
+    </section>
+  <% else %>
+    <% if @page.processing? %>
+      <p class="text-center my-10">Processing...</p>
+    <% else %>
+      <p class="text-center my-10">No links found. (Failed scrapping the page)</p>
+    <% end %>
+  <% end %>
+</main>
