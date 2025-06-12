@@ -49,10 +49,10 @@ echo "49781a401c3063bb7858fd0b4e4aba13" > config/master.key
 rails db:create
 ```
 
-2. Migrate the database
+2. Load database schema into the database
 
 ```bash
-rails db:migrate
+rails db:schema:load
 ```
 
 ### 4. Run the app
