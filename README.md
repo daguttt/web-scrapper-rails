@@ -12,19 +12,19 @@ App that allows users to scrape a web page and get a list of all of the links in
 ![Relational Model](./docs/images/relational-model.png)
 
 ### Libraries
-- Devise (Authentication)
-- TailwindCSS (CSS Library)
-- Faraday (Http Client)
-- Nokogiri (HTML parser)
-- Simplecov (Display Code coverage)
-- Pagy (Pagination)
+- [Devise](https://github.com/heartcombo/devise) (Authentication)
+- [TailwindCSS](https://tailwindcss.com/) (CSS Library)
+- [Faraday](https://lostisland.github.io/faraday/#/) (Http Client)
+- [Nokogiri](https://github.com/sparklemotion/nokogiri) (HTML parser)
+- [Simplecov](https://github.com/colszowka/simplecov) (Display Code coverage)
+- [Pagy](https://ddnexus.github.io/pagy/) (Pagination)
 
 #### Testing
-- RSpec (Testing framework)
-- Factory bot (Mocked data models)
-- Faker (Fake data for models)
-- VCR (Record HTTP interactions)
-- Shoulda Matchers (Simple One-liner for tests)
+- [RSpec](https://rspec.info/) (Testing framework)
+- [Factory bot](https://github.com/thoughtbot/factory_bot) (Mocked data models)
+- [Faker](https://github.com/faker-ruby/faker) (Fake data for models)
+- [VCR](https://github.com/vcr/vcr) (Record HTTP interactions)
+- [Shoulda Matchers](https://matchers.shoulda.io/) (Simple One-liner for tests)
 
 ## NOTE: Correction of question asked during interview
 
