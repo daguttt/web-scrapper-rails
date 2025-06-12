@@ -108,6 +108,11 @@ GEM
     drb (2.2.3)
     erb (5.0.1)
     erubi (1.13.1)
+    factory_bot (6.5.3)
+      activesupport (>= 6.1.0)
+    factory_bot_rails (6.4.4)
+      factory_bot (~> 6.5)
+      railties (>= 5.0.0)
     faraday (2.13.1)
       faraday-net_http (>= 2.0, < 3.5)
       json
@@ -346,6 +351,7 @@ DEPENDENCIES
   debug
   devise (~> 4.9)
   dotenv
+  factory_bot_rails (~> 6.4)
   faraday (~> 2.13, >= 2.13.1)
   htmlbeautifier (~> 1.4, >= 1.4.3)
   importmap-rails
