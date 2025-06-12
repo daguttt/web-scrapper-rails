@@ -17,20 +17,6 @@ Result = Struct.new(:success, :error, :value, keyword_init: true) do
     !success
   end
 
-  # Allows chaining successful operations
-  def then
-    return self if failure?
-
-    begin
-      result = yield(value)
-      return result if result.is_a?(Result)
-
-      Result.success(result)
-    rescue StandardError => e
-      Result.failure(e)
-    end
-  end
-
   def on_success
     yield(value) if success?
     self

@@ -3,7 +3,7 @@ class PageScrapperService
     attr_reader :url, :status_code
 
     def initialize(message, url: nil, status_code: nil)
-      super(message) # Pass the main message to StandardError's initialize
+      super(message)
       @url = url
       @status_code = status_code
     end
