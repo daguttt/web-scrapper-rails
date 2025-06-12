@@ -6,6 +6,9 @@ App that allows users to scrape a web page and get a list of all of the links in
 
 - Rails 7.2.2
 - PostgreSQL
+- TailwindCSS (CSS Library)
+- Faraday (Http Client)
+- Nokogiri (HTML parser)
 
 ## NOTE: Correction of question asked during interview
 
