@@ -49,7 +49,7 @@ group :development, :test do
   gem 'brakeman', require: false
 
   gem 'rubocop', require: false
-  gem 'rubocop-erb', '~> 0.3.0'
+  gem 'rubocop-erb', '~> 0.6.0'
   gem 'rubocop-rails', require: false
 
   gem 'factory_bot_rails', '~> 6.4'
