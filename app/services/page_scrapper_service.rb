@@ -17,7 +17,7 @@ class PageScrapperService
 
     Result.success response.body
   rescue Faraday::Error => e
-    Result.failure(CouldNotFetchPageError.new(e.message, url: url, status_code: response.status))
+    Result.failure(CouldNotFetchPageError.new(e.message, url: url, status_code: e.response[:status]))
   end
 
   def self.compute_link_url(link_url:, base_url:)
