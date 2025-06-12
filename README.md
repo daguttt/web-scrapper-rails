@@ -84,3 +84,14 @@ bin/rails server
 ```
 
 The app will be available at `http://localhost:3000`
+
+
+## Testing
+
+To run the tests, use the following command:
+
+```bash
+bundle exec rspec
+```
+
+You will see the test coverage in the console and a HTML report in the `coverage` folder.
