@@ -31,6 +31,8 @@ en:
   pages:
     create:
       success: 'Page was successfully created'
+    show:
+      failure: 'Page not found'
   activerecord:
     errors:
       models:
