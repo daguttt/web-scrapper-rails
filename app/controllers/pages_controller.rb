@@ -12,6 +12,7 @@ class PagesController < ApplicationController
   # POST /pages
   def create
     @page = Page.new(create_page_params)
+    @page.user = current_user
 
     respond_to do |format|
       if @page.save
@@ -34,7 +35,7 @@ class PagesController < ApplicationController
   end
 
   def set_pages
-    @pages = Page.all
+    @pages = user_signed_in? ? current_user.pages : Page.all
   end
 
   # Only allow a list of trusted parameters through.

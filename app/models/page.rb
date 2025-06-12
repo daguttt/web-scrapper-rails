@@ -1,6 +1,7 @@
 class Page < ApplicationRecord
   # Associations
   has_many :links, dependent: :destroy
+  belongs_to :user
 
   # Attributes
   enum :status, { processing: 0, success: 1, failed: 2 }

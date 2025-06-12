@@ -46,7 +46,7 @@ class PageScrapperService
     doc.css('title').text.strip
   end
 
-  def update_page_title(page_obj:, doc:)
+  def self.update_page_title(page_obj:, doc:)
     page_title = extract_page_title(doc:)
     Rails.logger.debug { "Page title: #{page_title}" } if Rails.logger.debug?
     Result.success page_obj.update!(title: page_title)
@@ -54,7 +54,7 @@ class PageScrapperService
     handle_error(error: e, page_obj:)
   end
 
-  def update_page_links(page_obj:, doc:)
+  def self.update_page_links(page_obj:, doc:)
     links = scrape_page_links(doc:, base_url: page_obj.url)
     Rails.logger.debug { "Links count: #{links.count}" } if Rails.logger.debug?
     page_obj.links = links
