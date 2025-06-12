@@ -35,7 +35,7 @@ class PagesController < ApplicationController
   end
 
   def set_pages
-    @pages = user_signed_in? ? current_user.pages : Page.all
+    @pages = user_signed_in? ? current_user.pages : []
   end
 
   # Only allow a list of trusted parameters through.
