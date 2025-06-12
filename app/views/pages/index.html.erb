@@ -43,7 +43,7 @@
           <tbody class="divide-y divide-gray-200">
             <% @pages.each do |page| %>
               <tr class="hover:bg-gray-50 cursor-pointer text-gray-900">
-                <td class="text-sm font-medium">
+                <td class="text-sm font-medium overflow-hidden">
                   <%= link_to page_path(page), class: 'w-max max-w-sm inline-block px-6 py-4 text-sm' do %>
                     <% if page.title.blank? %>
                       <em><%= page.processing? ? 'Processing...' : 'Failed' %></em> (<span class="text-gray-500"><%= page.url %></span>)
@@ -79,7 +79,8 @@
   <%# Pagination %>
   <% if user_signed_in? %>
     <div class="mt-4 flex justify-center">
-      <%== pagy_nav(@pagy) %>
+      <%== pagy_nav(@pagy) if @pagy.pages > 1 %>
+      <%== pagy_info(@pagy) %>
     </div>
   <% end %>
 </main>

@@ -8,6 +8,7 @@
 # Pagy.new|Pagy::Countless.new|Pagy::Calendar::*.new or any of the #pagy* controller methods
 # Here are the few that make more sense as DEFAULTs:
 # Pagy::DEFAULT[:limit]       = 20                    # default
+Pagy::DEFAULT[:limit] = 15
 # Pagy::DEFAULT[:size]        = 7                     # default
 # Pagy::DEFAULT[:ends]        = true                  # default
 # Pagy::DEFAULT[:page_param]  = :page                 # default

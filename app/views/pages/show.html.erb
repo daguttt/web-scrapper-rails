@@ -26,7 +26,10 @@
   <%# Links table %>
   <% if @page_links.any? %>
     <section class="mt-8">
-      <h1 class="text-2xl font-bold">Sublinks</h1>
+      <div class="flex justify-between items-center gap-2">
+        <h1 class="text-2xl font-bold">Sublinks</h1>
+        <%== pagy_info(@pagy) %>
+      </div>
       <div class="overflow-auto">
         <table class="rounded-lg overflow-hidden mt-4">
           <thead class="bg-gray-100 border-b">
@@ -58,7 +61,8 @@
     <% end %>
   <% end %>
   <%# Pagination %>
-  <div class="mt-4 flex justify-center">
-    <%== pagy_nav(@pagy) %>
+  <div class="mt-4 flex justify-center items-center gap-2">
+    <%== pagy_nav(@pagy) if @pagy.pages > 1 %>
+    <%== pagy_info(@pagy) %>
   </div>
 </main>
