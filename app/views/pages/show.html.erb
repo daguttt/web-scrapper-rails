@@ -17,6 +17,7 @@
       <span>Status:</span>
       <%= render 'pages/status_badge', status: @page.status %>
     </p>
+    <p>Total links: <strong><%= @page.links.count %></strong></p>
     <p class="flex gap-1 items-center">
       <span class="w-max">Base URL:</span>
       <%= link_to @page.url, @page.url, title: @page.url, class: 'inline-block text-blue-600 hover:text-blue-700 max-w-2xl truncate', target: '_blank', rel: 'noopener noreferrer' %>
