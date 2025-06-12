@@ -4,8 +4,8 @@
     <%= render 'partials/flash' %>
     <%= render 'devise/shared/error_messages', resource: resource %>
     <div>
-      <%= f.label :username, class: 'block text-sm font-medium mb-2 dark:text-white' %>
-      <%= f.text_field :username, autofocus: true, autocomplete: 'username', class: 'py-3 px-4 block w-full border border-gray-200 rounded-lg text-sm focus:border-blue-500 focus:ring-blue-500 disabled:opacity-50 disabled:pointer-events-none dark:bg-neutral-900 dark:border-neutral-700 dark:text-neutral-400 dark:placeholder-neutral-500 dark:focus:ring-neutral-600' %>
+      <%= f.label :email, class: 'block text-sm font-medium mb-2 dark:text-white' %>
+      <%= f.text_field :email, autofocus: true, autocomplete: 'email', placeholder: 'email@example.com', class: 'py-3 px-4 block w-full border border-gray-200 rounded-lg text-sm focus:border-blue-500 focus:ring-blue-500 disabled:opacity-50 disabled:pointer-events-none dark:bg-neutral-900 dark:border-neutral-700 dark:text-neutral-400 dark:placeholder-neutral-500 dark:focus:ring-neutral-600' %>
     </div>
     <div>
       <div class="flex justify-between">
@@ -14,7 +14,7 @@
           <%= link_to 'Forgot your password?', new_password_path(resource_name), class: 'text-sm decoration-1 hover:underline focus:outline-none focus:underline' %>
         <% end %>
       </div>
-      <%= f.password_field :password, autocomplete: 'current-password', class: 'py-3 px-4 block w-full border border-gray-200 rounded-lg text-sm focus:border-blue-500 focus:ring-blue-500 disabled:opacity-50 disabled:pointer-events-none dark:bg-neutral-900 dark:border-neutral-700 dark:text-neutral-400 dark:placeholder-neutral-500 dark:focus:ring-neutral-600' %>
+      <%= f.password_field :password, autocomplete: 'current-password', placeholder: '••••••••', class: 'py-3 px-4 block w-full border border-gray-200 rounded-lg text-sm focus:border-blue-500 focus:ring-blue-500 disabled:opacity-50 disabled:pointer-events-none dark:bg-neutral-900 dark:border-neutral-700 dark:text-neutral-400 dark:placeholder-neutral-500 dark:focus:ring-neutral-600' %>
     </div>
     <% if devise_mapping.rememberable? %>
       <div class="flex">
