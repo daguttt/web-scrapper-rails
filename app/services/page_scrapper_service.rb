@@ -75,7 +75,7 @@ class PageScrapperService
     Result.success('Page successfully scraped')
   end
 
-  def handle_error(error:, page_obj:)
+  def self.handle_error(error:, page_obj:)
     page_obj.update(status: :failed)
 
     case error
