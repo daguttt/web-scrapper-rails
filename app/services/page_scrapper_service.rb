@@ -29,12 +29,14 @@ class PageScrapperService
   end
 
   def self.scrape_page_links(doc:, base_url:)
-    doc.css('a[href]').map do |link|
+    links = doc.css('a[href]').map do |link|
       Link.new(
         url: compute_link_url(link_url: link['href'], base_url: base_url),
         title: extract_link_title(link)
       )
     end
+    Rails.logger.debug { "Links count: #{links.count}" } if Rails.logger.debug?
+    links
   end
 
   def self.extract_link_title(link)
@@ -43,36 +45,50 @@ class PageScrapperService
   end
 
   def self.extract_page_title(doc:)
-    doc.css('title').text.strip
+    page_title = doc.css('title').text.strip
+    Rails.logger.debug { "Page title: #{page_title}" } if Rails.logger.debug?
+    page_title
   end
 
-  def self.update_page_title(page_obj:, doc:)
+  def self.scrape_page(html:, base_url:)
+    Rails.logger.debug { "Scraping page: #{base_url}" } if Rails.logger.debug?
+
+    doc = Nokogiri::HTML(html)
     page_title = extract_page_title(doc:)
-    Rails.logger.debug { "Page title: #{page_title}" } if Rails.logger.debug?
+    links = scrape_page_links(doc:, base_url:)
+
+    {
+      links:,
+      page_title:
+    }
+  end
+
+  def self.update_page_title(page_obj:, page_title:)
     Result.success page_obj.update!(title: page_title)
   rescue ActiveRecord::ActiveRecordError => e
     handle_error(error: e, page_obj:)
   end
 
-  def self.update_page_links(page_obj:, doc:)
-    links = scrape_page_links(doc:, base_url: page_obj.url)
-    Rails.logger.debug { "Links count: #{links.count}" } if Rails.logger.debug?
+  def self.update_page_links(page_obj:, links:)
     page_obj.links = links
     Result.success page_obj.save!
   rescue ActiveRecord::ActiveRecordError => e
     handle_error(error: e, page_obj:)
   end
 
-  def self.scrape_page(page_obj)
+  def self.run(page_obj)
     html_result = fetch_page_html(url: page_obj.url)
     return handle_error(error: html_result.error, page_obj:) if html_result.failure?
 
-    doc = Nokogiri::HTML(html_result.value)
-    update_page_title(page_obj:, doc:)
-    update_page_links(page_obj:, doc:)
+    links, page_title = scrape_page(html: html_result.value, base_url: page_obj.url).fetch_values(:links, :page_title)
+
+    update_page_title(page_obj:, page_title:)
+    update_page_links(page_obj:, links:)
 
     page_obj.update(status: :success)
     Result.success('Page successfully scraped')
+  rescue ActiveRecord::ActiveRecordError => e
+    handle_error(error: e, page_obj:)
   end
 
   def self.handle_error(error:, page_obj:)

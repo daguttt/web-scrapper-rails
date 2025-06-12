@@ -3,6 +3,6 @@ class ScrapePageJob < ApplicationJob
 
   def perform(page_id)
     page = Page.find(page_id)
-    PageScrapperService.scrape_page(page)
+    PageScrapperService.run(page)
   end
 end
