@@ -2,10 +2,18 @@
 
 App that allows users to scrape a web page and get a list of all of the links in that page.
 
+
+<a href="https://web-scrapper-rails-production.up.railway.app">![App Screenshot](./docs/images/app-screenshot.png)</a>
+
+> [!TIP]
+> 
+> The app is deployed on Railway. You can try it out: [***Deploy link***](https://web-scrapper-rails-production.up.railway.app)
+
 ## Tech Stack 
 
 - Rails 7.2.2
 - PostgreSQL
+- Railway
 
 ### Relational Model
 
