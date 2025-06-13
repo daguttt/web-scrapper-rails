@@ -9,6 +9,9 @@ App that allows users to scrape a web page and get a list of all of the links in
 > 
 > The app is deployed on Railway. You can try it out: [***Deploy link***](https://web-scrapper-rails-production.up.railway.app)
 
+> [!NOTE]
+> The first time it may not load because the app service and DB containers are set up to sleep if they're idle for a while. It should load after couple of attempts.
+
 ## Tech Stack 
 
 - Rails 7.2.2
