@@ -18,9 +18,9 @@
       <%= render 'pages/status_badge', status: @page.status %>
     </p>
     <p>Total links: <strong><%= @page.links.count %></strong></p>
-    <p class="flex gap-1 items-center">
-      <span class="w-max">Base URL:</span>
-      <%= link_to @page.url, @page.url, title: @page.url, class: 'inline-block text-blue-600 hover:text-blue-700 max-w-2xl truncate', target: '_blank', rel: 'noopener noreferrer' %>
+    <p class="flex gap-1 items-center w-full">
+      <span class="shrink-0">Base URL:</span>
+      <%= link_to @page.url, @page.url, title: @page.url, class: 'inline-block text-blue-600 hover:text-blue-700 max-w-2xl truncate overflow-auto', target: '_blank', rel: 'noopener noreferrer' %>
     </p>
   </div>
   <%# Links table %>
@@ -31,7 +31,7 @@
         <%== pagy_info(@pagy) %>
       </div>
       <div class="overflow-auto">
-        <table class="rounded-lg overflow-hidden mt-4">
+        <table class="rounded-lg overflow-hidden mt-4 w-full">
           <thead class="bg-gray-100 border-b">
             <tr class="text-gray-700">
               <th class="px-6 py-4 text-left text-sm font-medium">Title</th>
@@ -61,7 +61,7 @@
     <% end %>
   <% end %>
   <%# Pagination %>
-  <div class="mt-4 flex justify-center items-center gap-2">
+  <div class="mt-4 flex flex-wrap gap-2 justify-center items-center">
     <%== pagy_nav(@pagy) if @pagy.pages > 1 %>
     <%== pagy_info(@pagy) %>
   </div>

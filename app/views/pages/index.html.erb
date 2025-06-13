@@ -80,7 +80,7 @@
   </section>
   <%# Pagination %>
   <% if user_signed_in? %>
-    <div class="mt-4 flex justify-center">
+    <div class="mt-4 flex flex-wrap gap-2 justify-center">
       <%== pagy_nav(@pagy) if @pagy.pages > 1 %>
       <%== pagy_info(@pagy) %>
     </div>
