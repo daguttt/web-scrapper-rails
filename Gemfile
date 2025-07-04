@@ -71,7 +71,7 @@ gem 'tailwindcss-rails', '~> 4.2'
 
 gem 'nokogiri', '~> 1.18', '>= 1.18.8'
 
-gem 'faraday', '~> 2.13', '>= 2.13.1'
+gem 'faraday', '~> 2.13'
 
 gem 'devise', '~> 4.9'
 
