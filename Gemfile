@@ -52,7 +52,7 @@ group :development, :test do
   gem 'rubocop-erb', '~> 0.3.0'
   gem 'rubocop-rails', require: false
 
-  gem 'factory_bot_rails', '~> 6.4'
+  gem 'factory_bot_rails', '~> 6.5'
   gem 'faker', '~> 3.5'
 end
 
